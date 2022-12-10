@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta chatset="UTF-8"/>
+    <meta name="description" content="Esta pagina te mostrara el Portafolio de Fabian Lopez Magnan, sus trabajos y proyectos"/>
+    <meta name="robots" content="index,follow"/>
+    <title>Mi Portafolio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <!--CSS y JS-->
+    <link rel="stylesheet" href="./css/css.css">
+    
+
+
+</head>
+<body>
+    <header> 
+        <div id="inicio">
+            <p id="titulo-inicial">Hola yo soy <span id="name">Fabián López Magnan</span>. Soy desarrollador </p>
+            <button id="btn-inicial" type="button" onclick="miTrabajo()" class="boton">Mi trabajo</button>
+        </div>
+        <nav id="navegador" class="navegador navbar navbar-expand-sm navbar-oscuro bg-oscuro">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" onclick="inicio()" aria-current="page">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sobremi" class="nav-link" aria-current="page" onclick="miTrabajo()">Sobre mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="portafolio" class="nav-link" onclick="portafolio()">Portafolio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contacto
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#"><span>icono </span>Facebook</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"><span>icono </span>Instagram</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"><span>icono </span>Linkedin</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"><span>icono </span>Correo</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+        <section>
+          </div>
+            <article class="container-fluid">
+              <h1>Sobre mi</h1>
+              <div id="divSobremi">
+                <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item"><h4>Rapido</h4><p>Los tiempos de carga rápidos e interacción sin demoras son mi máxima prioridad al crear sitios web.</p></li>
+                  <li class="list-group-item"><h4>Intuitivo</h4><p>Me gusta que tener fuerte preferencia por una UI intuitiva y fácil de usar.</p></li>
+                  <li class="list-group-item"><h4>Responsivo</h4><p>Diseños responsivos, que funcionen en cualquier dispositivo, grande o pequeño.</p></li>
+                  <li class="list-group-item"><h4>Dinamico</h4><p>Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida.</p></li>
+                </ul>
+              </div>
+            </article>
+            <article>
+               <div class="row">
+                <div class="col">
+                  <img src="./img/foto.jfif" class="img-thumbnail" alt="...">
+                  <h4>¿Quien es este Chico?</h4>
+                  <p>Soy ingeniero en Informática egresado del Inacap, soy de Chile, Santiago Maipu.
+                    Mis Hobbies son la Magia, la música, el Baloncesto, Me gusta la creación de páginas web y el Café.
+                  </p>
+                </div>
+                <div class="col">
+                  <h4>Mis Conocimientos Tecnicos</h4>
+                  <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                          CSS
+                          <span class="badge bg-primary rounded-pill">90%</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                          HTML
+                          <span class="badge bg-primary rounded-pill">90%</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                          JavaScript
+                          <span class="badge bg-primary rounded-pill">70%</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Bootstrap
+                        <span class="badge bg-primary rounded-pill">70%</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Java
+                          <span class="badge bg-primary rounded-pill">50%</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Node.js
+                          <span class="badge bg-primary rounded-pill">50%</span>
+                      </li>
+                  </ul>
+                </div>
+               </div>                
+            </article>
+        </section>
+        <section>
+          <article>
+              <h1>Mis Proyectos</h1>
+              <ul>
+                  <li><h4>Rapido</h4><p>Los tiempos de carga rápidos e interacción sin demoras son mi máxima prioridad al crear sitios web.</p></li>
+                  <li><h4>Intuitivo</h4><p>Me gusta que tener fuerte preferencia por una UI intuitiva y fácil de usar.</p></li>
+                  <li><h4>Responsivo</h4><p>Diseños responsivos, que funcionen en cualquier dispositivo, grande o pequeño.</p></li>
+                  <li><h4>Dinamico</h4><p>Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida.</p></li>
+              </ul>
+          </article>
+          <article>
+              <h4>¿Quien es este Chico?</h4>
+              <p>I'm a Front-End Developer for ChowNow in Los Angeles, CA.
+                  I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+              </p>
+              <ul>
+                  <li>
+                      CSS
+                  </li>
+                  <li>
+                      HTML
+                  </li>
+                  <li>
+                      JavaScript
+                  </li>
+              </ul>
+          </article>
+      </section>
+    </main>
+    <footer>
+      <div style="margin-top: 50px;margin-bottom: 1000px;"></div> 
+    </footer>
+    
+  
+  <script src="./js/navScroll.js"></script>
+</body>
+</html>
