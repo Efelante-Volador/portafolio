@@ -28,7 +28,7 @@
 <body>
   <header>
     <div id="inicio">
-      <p id="titulo-inicial">Hola yo soy <span id="name">Fabián López Magnan</span>. Soy desarrollador </p>
+      <p class="titulo-inicial"><span id="t1">Hola yo soy</span> <span id="name">Fabián López Magnan</span>. <span id="t2">Soy desarrollador</span> </p>
       <button id="btn-inicial" type="button" onclick="miTrabajo()" class="boton">Mi trabajo</button>
     </div>
     <nav id="navegador" class="navegador navbar navbar-expand-sm navbar-oscuro bg-oscuro">
@@ -67,6 +67,19 @@
                   <hr class="dropdown-divider">
                 </li>
                 <li><a class="dropdown-item" href="#"><span>icono </span>Correo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Idioma
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" id="jsonBtnEs" href="#"><span>icono </span>Español</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" id="jsonBtnEn" href="#"><span>icono </span>Ingles</a></li>
               </ul>
             </li>
           </ul>
@@ -188,6 +201,7 @@
 
 
   <script src="./js/navScroll.js"></script>
+  <script src="./js/idioma.js"></script>
 </body>
 
 </html>

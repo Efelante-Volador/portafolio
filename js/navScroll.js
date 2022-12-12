@@ -4,7 +4,7 @@ var porta = document.getElementById('portafolio');
 
 window.addEventListener('scroll', function() {
   let ubicacionactual = window.pageYOffset || document.documentElement.scrollTop
-  console.log(ubicacionactual);
+  //console.log(ubicacionactual);
   if (ubicacionactual >= 630) {
     $nav.style.visibility = "visible";
   }
