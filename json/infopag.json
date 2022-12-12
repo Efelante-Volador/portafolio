@@ -35,9 +35,9 @@
     "navbar": {
       "inicio": "Home",
       "perfil": "Profile",
-      "portafolio": "Briefcase",
-      "contacto": "Contac",
-      "idioma": "Language"
+      "Portafolio": "Portafolio",
+      "Contacto": "Contac",
+      "Idioma": "Language"
     },
     "profile": {
       "title": "Profile",
