@@ -1,6 +1,6 @@
 var $nav = document.getElementById('navegador');
-var sobremi = document.getElementById('sobremi');
-var porta = document.getElementById('portafolio');
+var sobremi = document.getElementById('nav-tittle-perfil');
+var porta = document.getElementById('nav-tittle-portafolio');
 
 window.addEventListener('scroll', function() {
   let ubicacionactual = window.pageYOffset || document.documentElement.scrollTop
