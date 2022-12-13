@@ -18,6 +18,9 @@ var txt1 = document.getElementById('cap1');
 var txt2 = document.getElementById('cap2');
 var txt3 = document.getElementById('cap3');
 var txt4 = document.getElementById('cap4');
+var who = document.getElementById('question');
+var text = document.getElementById('question-text');
+var skills = document.getElementById('skills');
 
 function es() {
   var idioma = document.getElementById('jsonBtnEs');
@@ -46,6 +49,9 @@ function es() {
       txt2.textContent = json.es.profile.text.txt2;
       txt3.textContent = json.es.profile.text.txt3;
       txt4.textContent = json.es.profile.text.txt4;
+      who.textContent = json.es.profile.who.question;
+      text.textContent = json.es.profile.who.text;
+      skills.textContent = json.es.profile.skills;
     });
 }
 function en() {
@@ -73,6 +79,9 @@ function en() {
       txt2.textContent = json.en.profile.text.txt2;
       txt3.textContent = json.en.profile.text.txt3;
       txt4.textContent = json.en.profile.text.txt4;
+      who.textContent = json.en.profile.who.question;
+      text.textContent = json.en.profile.who.text;
+      skills.textContent = json.en.profile.skills;
     });
 }
 

@@ -12,7 +12,7 @@
       "idioma": "Idioma"
     },
     "profile": {
-      "title": "Perfil",
+      "title": "Sobre mi",
       "caption": {
         "c1": "Rápido",
         "c2": "Intuitivo",
@@ -24,7 +24,12 @@
         "txt2": "Me gusta que tener fuerte preferencia por una UI intuitiva y fácil de usar.",
         "txt3": "Diseños responsivos, que funcionen en cualquier dispositivo, grande o pequeño.",
         "txt4": "Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida."
-      }
+      },
+      "who": {
+        "question": "¿Quién es este chico?",
+        "text": "Soy ingeniero en Informática egresado del Inacap, soy de Chile, Santiago Maipu. Mis Hobbies son la Magia, la música, el Baloncesto, Me gusta la creación de páginas web y el Café."
+      },
+      "skills": "Mis Habilidades técnicas"
     }
   },
   "en": {
@@ -52,7 +57,12 @@
         "txt2": "I like that they have a strong preference for an intuitive and easy to use UI.",
         "txt3": "Responsive designs that work on any device, big or small.",
         "txt4": "Websites don't have to be static, I love making pages come to life."
-      }
+      },
+      "who": {
+        "question": "Who is this guy?",
+        "text": "I´m informatic engienier graduated from Inacap, i´m from Chile, Santiago Maipu. My hobbies are the Magic, Music, Basketball, i like creating web pages and coffee."
+      },
+      "skills": "My Skills"
     }
   }
 }
