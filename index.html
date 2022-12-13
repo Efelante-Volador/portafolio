@@ -44,10 +44,10 @@
               <a id="nav-tittle-inicio" class="nav-link active" onclick="inicio()" aria-current="page">Inicio</a>
             </li>
             <li class="nav-item">
-              <a id="nav-tittle-perfil" class="nav-link" aria-current="page" onclick="miTrabajo()">Sobre mi</a>
+              <a id="nav-tittle-perfil" class="nav-link" aria-current="page" onclick="miTrabajo()">Perfil</a>
             </li>
             <li class="nav-item">
-              <a id="nav-tittle-portafolio" class="nav-link" onclick="portafolio()">Portafolio</a>
+              <a id="nav-tittle-portafolio" class="nav-link" onclick="portafolio()">Proyectos</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -55,19 +55,25 @@
                 <span id="nav-tittle-contacto">Contacto</span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"><img class="social-icon" src="img/icons/4x3/fb.png" alt="Facebook">Facebook</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://github.com/FabianLopezMagnan"><img
+                      class="social-icon" src="img/icons/4x3/github.png" alt="Github">Github</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#"><img class="social-icon" src="img/icons/4x3/ig.png" alt="Instagram">Instagram</a></li>
+                <li><a class="dropdown-item" target="_blank" href="#"><img class="social-icon"
+                      src="img/icons/4x3/ig.png" alt="Instagram">Instagram</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="https://www.linkedin.com/in/fabi%C3%A1n-andr%C3%A9s-l%C3%B3pez-magnan-a1358b177/"><img class="social-icon" src="img/icons/4x3/lk.png" alt="Linkedin">Linkedin</a></li>
+                <li><a class="dropdown-item" target="_blank"
+                    href="https://www.linkedin.com/in/fabi%C3%A1n-andr%C3%A9s-l%C3%B3pez-magnan-a1358b177/"><img
+                      class="social-icon" src="img/icons/4x3/lk.png" alt="Linkedin">Linkedin</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#"><img class="social-icon" src="img/icons/4x3/mail.png" alt="Email">Correo</a></li>
+                <li><a class="dropdown-item" target="_blank"
+                    href="mailto:fabianlopezmagnan@gmail.com?body=He leido tu Portafolio, me parecio interesante y he decidido escribirte un correo""><img
+                      class=" social-icon" src="img/icons/4x3/mail.png" alt="Email">Correo</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -76,11 +82,13 @@
                 <span id="nav-tittle-idioma">Idioma</span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item"  data-value="es" id="jsonBtnEs" href="#"> <img class="bandera" src="img/icons/4x3/es.svg" alt="Bandera español">Español</a></li>
+                <li><a class="dropdown-item" data-value="es" id="jsonBtnEs" href="#"> <img class="bandera"
+                      src="img/icons/4x3/es.svg" alt="Bandera español">Español</a></li>
                 <li>
                   <hr class="dropdown-divider ">
                 </li>
-                <li><a class="dropdown-item"  data-value="es" id="jsonBtnEn" href="#"> <img class="bandera" src="img/icons/4x3/gb.svg" alt="Bandera español">Ingles</a></li>
+                <li><a class="dropdown-item" data-value="es" id="jsonBtnEn" href="#"> <img class="bandera"
+                      src="img/icons/4x3/gb.svg" alt="Bandera español">Ingles</a></li>
               </ul>
             </li>
           </ul>
@@ -91,7 +99,7 @@
   <main class="container">
     <section>
       </div>
-      <article class="container-fluid">
+      <article id="articulo-perfil-datos" class="container-fluid">
         <h1 id="perfil-titulo">Perfil</h1>
         <div id="divSobremi">
           <ul class="list-group list-group-horizontal">
@@ -117,17 +125,17 @@
           </ul>
         </div>
       </article>
-      <article>
+      <article id="articulo-perfil-foto">
         <div class="row">
           <div class="col">
-            <img src="./img/foto.jfif" class="img-thumbnail" alt="...">
-            <h4 id="question" >¿Quien es este Chico?</h4>
-            <p id="question-text" >Soy ingeniero en Informática egresado del Inacap, soy de Chile, Santiago Maipu.
+            <img src="./img/fabo.jpg" class="img-thumbnail" alt="...">
+            <h4 id="question"> ¿Quien es este Chico?</h4>
+            <p id="question-text">Soy ingeniero en Informática egresado del Inacap, soy de Chile, Santiago Maipu.
               Mis Hobbies son la Magia, la música, el Baloncesto, Me gusta la creación de páginas web y el Café.
             </p>
           </div>
-          <div class="col">
-            <h4 id="skills" >Mis Conocimientos Tecnicos</h4>
+          <div id="skills-container" class="col">
+            <h4 id="skills">Mis Conocimientos Tecnicos</h4>
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 CSS
@@ -163,45 +171,48 @@
         <h1>Proyectos</h1>
         <ul>
           <li>
-            <h4>Rapido</h4>
-            <p>Los tiempos de carga rápidos e interacción sin demoras son mi máxima prioridad al crear sitios web.</p>
+            <h4>Pagina web Casita Latina</h4>
+            <p><span>Este proyecto consistio en una pagina web informativa responsiva para una micro empresa de idioma,
+                Chistian el cliente, es un Argentino que se fue a vivir a Polonia, hoy en dia trabaja enseñando español
+                en este pais, el nececitaba un sitio web donde pudiera promocionar sus servicios y dar a conocer su
+                informacion de contacto su sitio web </span><a target="_blank" href="https://casitalatina.pl/">Casita
+                Latina</a><span> este sitio se encuentra completamente en Polaco. este sitio se realizo con HTML, CSS
+                (Boostrap), y JavaScript</span></p>
+
           </li>
           <li>
-            <h4>Intuitivo</h4>
-            <p>Me gusta que tener fuerte preferencia por una UI intuitiva y fácil de usar.</p>
+            <h4>Bot de Discord</h4>
+            <p>Discord es una aplicación que permite comunicarse a través de mensajes de texto, voz y video diseñada
+              principalmente para comunidades de videojuegos. Se programó un Bot para leer mensajes de texto y
+              reaccionar a ellos mediante ciertos comandos. Estos comandos utilizaban un apóstrofe o palabra clave para
+              interpretarlos como comandos. La aplicación se realizó en Replit, una plataforma de programación que
+              permite ejecutar código en diferentes lenguajes. Se mantuvo en línea mediante un pinger o herramienta de
+              ping que verificaba si el sitio estaba en línea cada 5 minutos. Se utilizó Node js como entorno de
+              ejecución, algunas de las acciones que realizaba este bot era, la asignacion de roles a los usuarios, dar
+              hora Utc y dar la cantidad de usuarios conectados o usuarios dentro de la comunidad.</p>
           </li>
           <li>
-            <h4>Responsivo</h4>
-            <p>Diseños responsivos, que funcionen en cualquier dispositivo, grande o pequeño.</p>
+            <h4>Otro Proyecto</h4>
+            <p>Detalle del proyecto, que se realizo, para que se realizo y que tecnologias utilice.</p>
           </li>
           <li>
-            <h4>Dinamico</h4>
-            <p>Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida.</p>
+            <h4>Otro Proyecto</h4>
+            <p>Detalle del proyecto, que se realizo, para que se realizo y que tecnologias utilice.</p>
           </li>
         </ul>
       </article>
       <article>
-        <h4>¿Quien es este Chico?</h4>
-        <p>I'm a Front-End Developer for ChowNow in Los Angeles, CA.
-          I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-        </p>
+        <h4>Titulo de articulo</h4>
         <ul>
           <li>
-            CSS
-          </li>
-          <li>
-            HTML
-          </li>
-          <li>
-            JavaScript
+            <p>parrafo de articulo</p>
           </li>
         </ul>
+
       </article>
     </section>
   </main>
-  <footer>
-    <div style="margin-top: 50px;margin-bottom: 1000px;"></div>
-  </footer>
+
 
 
   <script src="./js/navScroll.js"></script>

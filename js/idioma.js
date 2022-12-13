@@ -21,6 +21,7 @@ var txt4 = document.getElementById('cap4');
 var who = document.getElementById('question');
 var text = document.getElementById('question-text');
 var skills = document.getElementById('skills');
+var botonInicial = document.getElementById('btn-inicial');
 
 function es() {
   var idioma = document.getElementById('jsonBtnEs');
@@ -52,6 +53,7 @@ function es() {
       who.textContent = json.es.profile.who.question;
       text.textContent = json.es.profile.who.text;
       skills.textContent = json.es.profile.skills;
+      botonInicial.textContent = "Mi Trabajo";
     });
 }
 function en() {
@@ -82,6 +84,7 @@ function en() {
       who.textContent = json.en.profile.who.question;
       text.textContent = json.en.profile.who.text;
       skills.textContent = json.en.profile.skills;
+      botonInicial.textContent = "My Work";
     });
 }
 

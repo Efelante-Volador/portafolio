@@ -47,7 +47,6 @@ section{
 }
 article{
     background-color: #f5f3f4;
-    margin: 50px;
     padding: 30px;
 }
 #name{
@@ -135,4 +134,16 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
   width:30px;
   height30px;
   margin:10px;
+}
+.img-thumbnail{
+  height:250px;
+}
+#articulo-perfil-datos{
+  margin-top:50px;
+}
+#question{
+  margin-top:20px;
+}
+#skills-container{
+  margin-top:5px;
 }

@@ -7,7 +7,7 @@
     "navbar": {
       "inicio": "Inicio",
       "perfil": "Perfil",
-      "portafolio": "Portafolio",
+      "portafolio": "Proyectos",
       "contacto": "Contacto",
       "idioma": "Idioma"
     },
@@ -40,7 +40,7 @@
     "navbar": {
       "inicio": "Home",
       "perfil": "Profile",
-      "portafolio": "Portafolio",
+      "portafolio": "Projects",
       "contacto": "Contac",
       "idioma": "Language"
     },
