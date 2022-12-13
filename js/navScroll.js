@@ -4,7 +4,7 @@ var porta = document.getElementById('nav-tittle-portafolio');
 
 window.addEventListener('scroll', function() {
   let ubicacionactual = window.pageYOffset || document.documentElement.scrollTop
-  //console.log(ubicacionactual);
+  console.log(ubicacionactual);
   if (ubicacionactual >= 630) {
     $nav.style.visibility = "visible";
   }
@@ -23,7 +23,7 @@ function miTrabajo() {
   porta.style.color = "rgba(255, 255, 255, 0.55)"
 }
 function portafolio() {
-  window.scrollTo("smooth", 1481);
+  window.scrollTo("smooth", 1420);
   porta.style.color = "rgb(38, 222, 170)";
   sobremi.style.color = "rgba(255, 255, 255, 0.55)"
 }

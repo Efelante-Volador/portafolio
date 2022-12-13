@@ -126,3 +126,13 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 #divSobremi{
   margin-top:50px;
 }
+.bandera{
+  width: 20px;
+  height: 20px;
+  margin:10px;
+}
+.social-icon{
+  width:30px;
+  height30px;
+  margin:10px;
+}
