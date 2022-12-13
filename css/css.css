@@ -147,3 +147,9 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 #skills-container{
   margin-top:5px;
 }
+footer{
+  background-color: #1E232F;
+}
+#mifoto{
+  border-radius:0 25% 0 25%;
+}
