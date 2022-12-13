@@ -12,7 +12,7 @@
       "idioma": "Idioma"
     },
     "profile": {
-      "title": "Sobre mi",
+      "title": "Perfil",
       "caption": {
         "c1": "Rápido",
         "c2": "Intuitivo",
@@ -35,9 +35,9 @@
     "navbar": {
       "inicio": "Home",
       "perfil": "Profile",
-      "Portafolio": "Portafolio",
-      "Contacto": "Contac",
-      "Idioma": "Language"
+      "portafolio": "Portafolio",
+      "contacto": "Contac",
+      "idioma": "Language"
     },
     "profile": {
       "title": "Profile",
