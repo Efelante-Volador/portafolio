@@ -222,3 +222,26 @@ footer{
 .toggle-theme__text:hover{
   color:var(--main-color);
 }
+.class-proyecto{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-li);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
+  display:none;
+}
+.img-proyecto{
+  height:180px;
+  padding:0px ;
+  border-radius:25% 25% 25% 25%;
+}
+.div-proyecto{
+  margin-top:30px;
+  padding: 10px;
+}
+#contenedor-proyectos{
+  margin:30px;
+}

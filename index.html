@@ -83,12 +83,12 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" data-value="es" id="jsonBtnEs" href="#"> <img class="bandera"
-                      src="img/icons/4x3/es.svg" alt="Bandera español">Español</a></li>
+                      src="img/icons/4x3/es.svg" alt="Bandera español"><span id="spanEs">Español</span></a></li>
                 <li>
                   <hr class="dropdown-divider ">
                 </li>
                 <li><a class="dropdown-item" data-value="es" id="jsonBtnEn" href="#"> <img class="bandera"
-                      src="img/icons/4x3/gb.svg" alt="Bandera español">Ingles</a></li>
+                      src="img/icons/4x3/gb.svg" alt="Bandera español"><span id="spanEn">Ingles</span></a></li>
               </ul>
             </li>
           </ul>
@@ -172,36 +172,82 @@
     </section>
     <section>
       <article>
-        <h1>Proyectos</h1>
+        <h1 id="title-proyect">Proyectos</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4 id="proyect-title-1A">Pagina web "Casita Latina"</h4>
+              <a href="#">
+                <img class="img-proyecto" src="img/ProyectoCasitaLatina.png" alt="Imagen de Pag Casita Latina">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <h4 id="proyect-title-2A">Bot de Discord</h4>
+              <a href="#">
+                <img class="img-proyecto" src="img/discordBot.jpg" alt="Img Bot discord">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <h4 id="proyect-title-3A">Otro Proyecto</h4>
+              <a href="#">
+                <img class="img-proyecto" src="img/example.jpg" alt="">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <h4 id="proyect-title-4A">Otro Proyecto</h4>
+              <a href="#">
+                <img class="img-proyecto" src="img/example.jpg" alt="">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <h4 id="">Otro Proyecto</h4>
+              <a href="#">
+                <img class="img-proyecto" src="img/example.jpg" alt="">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <h4 id="">Otro Proyecto</h4>
+              <a href="#">
+                <img class="img-proyecto" src="img/example.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
         <ul>
-          <li>
-            <h4>Pagina web Casita Latina</h4>
-            <p><span>Este proyecto consistio en una pagina web informativa responsiva para una micro empresa de idioma,
-                Christian el cliente, es un Argentino que se fue a vivir a Polonia, hoy en dia trabaja enseñando español
-                en este pais, el nececitaba un sitio web donde pudiera promocionar sus servicios y dar a conocer su
-                informacion de contacto su sitio web </span><a target="_blank" href="https://casitalatina.pl/">Casita
-                Latina</a><span> este sitio se encuentra completamente en Polaco. este sitio se realizo con HTML, CSS
+          <li class="class-proyecto">
+            <h4 id="proyect-title-1">Pagina web "Casita Latina"</h4>
+            <p><span id="proyect-description-1">Este proyecto consistió en una página web informativa y responsiva
+                para una micro-empresa de idiomas, Christian el cliente, es un argentino que se fue a vivir a Polonia,
+                hoy en día trabaja enseñando español en este país, necesitaba un sitio web donde pudiera promocionar
+                sus servicios y dar a conocer su información de contacto. Su sitio web </span><a target="_blank"
+                href="https://casitalatina.pl/">Casita
+                Latina</a><span id="proyect-description-1B"> se encuentra completamente en Polaco. este
+                sitio se realizo con HTML, CSS
                 (Boostrap), y JavaScript</span></p>
-
           </li>
-          <li>
-            <h4>Bot de Discord</h4>
-            <p>Discord es una aplicación que permite comunicarse a través de mensajes de texto, voz y video diseñada
+          <li class="class-proyecto">
+            <h4 id="proyect-title-2">Bot de Discord</h4>
+            <p id="proyect-description-2">Discord es una aplicación que permite comunicarse a través de mensajes de
+              texto, voz y video diseñada
               principalmente para comunidades de videojuegos. Se programó un Bot para leer mensajes de texto y
-              reaccionar a ellos mediante ciertos comandos. Estos comandos utilizaban un apóstrofe o palabra clave para
+              reaccionar a ellos mediante ciertos comandos. Estos comandos utilizaban un apóstrofe o palabra clave
+              para
               interpretarlos como comandos. La aplicación se realizó en Replit, una plataforma de programación que
               permite ejecutar código en diferentes lenguajes. Se mantuvo en línea mediante un pinger o herramienta de
               ping que verificaba si el sitio estaba en línea cada 5 minutos. Se utilizó Node js como entorno de
-              ejecución, algunas de las acciones que realizaba este bot era, la asignacion de roles a los usuarios, dar
+              ejecución, algunas de las acciones que realizaba este bot era, la asignacion de roles a los usuarios,
+              dar
               hora Utc y dar la cantidad de usuarios conectados o usuarios dentro de la comunidad.</p>
           </li>
-          <li>
-            <h4>Otro Proyecto</h4>
-            <p>Detalle del proyecto, que se realizo, para que se realizo y que tecnologias utilice.</p>
+          <li class="class-proyecto">
+            <h4 id="proyect-title-3">Otro Proyecto</h4>
+            <p id="proyect-description-3">Detalle del proyecto, que se realizo, para que se realizo y que tecnologias
+              utilice.</p>
           </li>
-          <li>
-            <h4>Otro Proyecto</h4>
-            <p>Detalle del proyecto, que se realizo, para que se realizo y que tecnologias utilice.</p>
+          <li class="class-proyecto">
+            <h4 id="proyect-title-4">Otro Proyecto</h4>
+            <p id="proyect-description-4">Detalle del proyecto, que se realizo, para que se realizo y que tecnologias
+              utilice.</p>
           </li>
         </ul>
       </article>

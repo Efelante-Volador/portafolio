@@ -9,10 +9,14 @@
       "perfil": "Perfil",
       "portafolio": "Proyectos",
       "contacto": "Contacto",
-      "idioma": "Idioma"
+      "idioma": {
+        "title": "Idioma",
+        "es": "Español",
+        "en": "Ingles"
+      }
     },
     "profile": {
-      "title": "Sobre mi",
+      "title": "Perfil",
       "caption": {
         "c1": "Rápido",
         "c2": "Intuitivo",
@@ -30,6 +34,23 @@
         "text": "Soy ingeniero en Informática egresado del Inacap, soy de Chile, Santiago Maipu. Mis Hobbies son la Magia, la música, el Baloncesto, Me gusta la creación de páginas web y el Café."
       },
       "skills": "Mis Habilidades técnicas"
+    },
+    "proyects": {
+      "titles": {
+        "t1": "Pagina web Casita Latina",
+        "t2": "Bot Discord",
+        "t3": "otro Proyecto",
+        "t4": "otro Proyecto"
+      },
+      "description": {
+        "d1": {
+            "d1": "Este proyecto consistió en una página web informativa y responsiva para una micro-empresa de idiomas, Christian el cliente, es un argentino que se fue a vivir a Polonia, hoy en día trabaja enseñando español en este país, necesitaba un sitio web donde pudiera promocionar sus servicios y dar a conocer su información de contacto. Su sitio web ",
+            "d2": " está completamente en polaco. Este sitio fue construido con HTML, CSS (Boostrap) y JavaScript."
+        },
+        "d2": "Discord es una aplicación que permite comunicarse a través de mensajes de texto, voz y video diseñada principalmente para comunidades de videojuegos. Se programó un Bot para leer mensajes de texto y reaccionar a ellos mediante ciertos comandos. Estos comandos utilizaban un apóstrofe o palabra clave para interpretarlos como comandos. La aplicación se realizó en Replit, una plataforma de programación que permite ejecutar código en diferentes lenguajes. Se mantuvo en línea mediante un pinger o herramienta de ping que verificaba si el sitio estaba en línea cada 5 minutos. Se utilizó Node js como entorno de ejecución, algunas de las acciones que realizaba este bot era, la asignacion de roles a los usuarios, dar hora Utc y dar la cantidad de usuarios conectados o usuarios dentro de la comunidad.",
+        "d3": "Detalle del proyecto, que se realizo, para que se realizo y que tecnologias utilice",
+        "d4": "Detalle del proyecto, que se realizo, para que se realizo y que tecnologias utilice"
+      }
     }
   },
   "en": {
@@ -40,9 +61,13 @@
     "navbar": {
       "inicio": "Home",
       "perfil": "Profile",
-      "portafolio": "Projects",
+      "portafolio": "Proyects",
       "contacto": "Contact",
-      "idioma": "Language"
+      "idioma": {
+        "title": "Language",
+        "es": "Spanish",
+        "en": "English"
+      }
     },
     "profile": {
       "title": "Profile",
@@ -55,7 +80,7 @@
       "text": {
         "txt1": "Fast load times and lag-free interaction are my top priority when building websites.",
         "txt2": "I have a strong preference for an easy to use and intuitive user interface.",
-        "txt3": "Responsive designs that work on any device, big or small.",
+        "txt3": "Resesponsive designs that work on any device, big or small.",
         "txt4": "Websites don't have to be static, I love making pages come to life."
       },
       "who": {
@@ -63,6 +88,23 @@
         "text": "I´m informatic engienier graduated from Inacap, i´m from Chile, Santiago Maipu. My hobbies are the Magic, Music, Basketball, i like creating web pages and coffee."
       },
       "skills": "My Skills"
+    },
+    "proyects": {
+      "titles": {
+        "t1": "Web page Casita Latina",
+        "t2": "Bot Discord",
+        "t3": "Other Proyect",
+        "t4": "Other Proyect"
+      },
+      "description": {
+        "d1": {
+            "d1": "This project consisted of a responsive and informative website for a language micro business, Christian the client, is an Argentine who moved to Poland, nowadays he works teaching Spanish in this country, he needed a website where he could promote his services and publicize his contact information. His website ",
+            "d2": " is entirely in Polish. This site was built with HTML, CSS (Boostrap), and JavaScript."
+          },
+        "d2": "Discord is an application that allows for communication through text, voice, and video messages, primarily designed for video game communities. A bot was programmed to read text messages and react to them through certain commands. These commands used an apostrophe or keyword to interpret them as commands. The application was created on Replit, a programming platform that allows for code execution in different languages. It was kept online through a pinger or ping tool that checked if the site was online every 5 minutes. Node js was used as the execution environment, and some of the actions performed by this bot included assigning roles to users, providing the UTC time, and giving the number of connected users or users within the community.",
+        "d3": "Detalle del proyecto, que se realizo, para que se realizo y que tecnologias utilice",
+        "d4": "Detalle del proyecto, que se realizo, para que se realizo y que tecnologias utilice"
+      }
     }
   }
 }
