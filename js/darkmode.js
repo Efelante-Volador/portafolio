@@ -6,11 +6,11 @@ const toggleColors = document.getElementById("toggle-colors");
 
 toggleTheme.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  if (toggleIcon.src.includes("moon.svg")) {
-    toggleIcon.src = 'img/icons/sun.svg'
+  if (toggleIcon.src.includes("moon.png")) {
+    toggleIcon.src = 'img/icons/sun.png'
     toggleText.textContent = 'Light Mode';
   } else {
-    toggleIcon.src = 'img/icons/moon.svg'
+    toggleIcon.src = 'img/icons/moon.png'
     toggleText.textContent = 'Dark Mode';
   }
 })
