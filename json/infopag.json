@@ -35,7 +35,7 @@
       },
       "skills": "Mis Habilidades técnicas"
     },
-    "proyects": {
+    "projects": {
       "titles": {
         "t1": "Pagina web Casita Latina",
         "t2": "Bot Discord",
@@ -61,7 +61,7 @@
     "navbar": {
       "inicio": "Home",
       "perfil": "Profile",
-      "portafolio": "Proyects",
+      "portafolio": "Projects",
       "contacto": "Contact",
       "idioma": {
         "title": "Language",
@@ -89,7 +89,7 @@
       },
       "skills": "My Skills"
     },
-    "proyects": {
+    "projects": {
       "titles": {
         "t1": "Web page Casita Latina",
         "t2": "Bot Discord",

@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <script src="./js/bootstrap.bundle.min.js"></script>
 
-  <!--CSS y JS-->
+  <!--CSS-->
   <link rel="stylesheet" href="./css/css.css">
 
 
@@ -27,12 +27,12 @@
 
 <body>
   <header>
-    <div id="inicio">
+    <div id="inicio"><!-- Inicio -->
       <p class="titulo-inicial"><span id="t1">Hola yo soy</span> <span id="name">Fabián López Magnan</span>. <span
           id="t2">Soy desarrollador</span> </p>
       <button id="btn-inicial" type="button" onclick="miTrabajo()" class="boton">Mi trabajo</button>
-    </div>
-    <nav id="navegador" class="navegador navbar navbar-expand-sm navbar-oscuro bg-oscuro">
+    </div><!-- Inicio -->
+    <nav id="navegador" class="navegador navbar navbar-expand-sm navbar-oscuro bg-oscuro"><!-- Navbar -->
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,36 +93,40 @@
             </li>
           </ul>
           <div id="toggle-theme" class="toggle-theme">
-            <img id="toggle-icon" src="img/icons/moon.png" alt="Icon theme" class="toggle-theme__ic">
-            <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+            <p id="toggle-text" class="toggle-theme__text">
+              <img id="toggle-icon" src="img/icons/moon.png" alt="Icon theme" class="toggle-theme__ic"><span id="texto-toggle">Dark Mode</span>    
+            </p>
           </div>
         </div>
       </div>
-    </nav>
+    </nav><!-- Navbar -->
   </header>
-  <main class="container">
-    <section>
-      </div>
+  <main class="container"><!-- Perfil y Proyectos -->
+    <section><!-- Perfil -->
       <article id="articulo-perfil-datos" class="container-fluid">
         <h1 id="perfil-titulo">Perfil</h1>
         <div id="divSobremi">
           <ul class="list-group list-group-horizontal">
             <li class="list-group-item">
-              <h4 id="caption1">Rapido</h4>
+              <h4><img class="social-icon" src="img/icons/fast.png" alt="Linkedin"><span id="caption1">Rápido</span>
+              </h4>
               <p><span id="cap1">Los tiempos de carga rápidos e interacción sin demoras son mi máxima prioridad al crear
                   sitios web.</span></p>
             </li>
             <li class="list-group-item">
-              <h4 id="caption2">Intuitivo</h4>
+              <h4><img class="social-icon" src="img/icons/creative.png" alt="Linkedin"><span
+                  id="caption2">Intuitivo</span></h4>
               <p> <span id="cap2">Tengo una fuerte preferencia por una UI intuitiva y fácil de usar.</span></p>
             </li>
             <li class="list-group-item">
-              <h4 id="caption3">Responsivo</h4>
+              <h4><img class="social-icon" src="img/icons/responsive.png" alt="Linkedin"><span
+                  id="caption3">Responsivo</span></h4>
               <p><span id="cap3">Diseños responsivos, que funcionen en cualquier dispositivo, grande o pequeño.</span>
               </p>
             </li>
             <li class="list-group-item">
-              <h4 id="caption4">Dinamico</h4>
+              <h4><img class="social-icon" src="img/icons/dynamic.png" alt="Linkedin"><span
+                  id="caption4">Dinámico</span></h4>
               <p><span id="cap4">Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren
                   vida.</span></p>
             </li>
@@ -169,8 +173,8 @@
           </div>
         </div>
       </article>
-    </section>
-    <section>
+    </section><!-- Perfil -->
+    <section><!-- Proyectos -->
       <article>
         <h1 id="title-proyect">Proyectos</h1>
         <div class="container">
@@ -256,13 +260,13 @@
         </ul>
 
       </article>
-    </section>
-  </main>
-  <footer>
+    </section><!-- Proyectos -->
+  </main><!-- Perfil y Proyectos -->
+  <footer><!-- Pie de pagina -->
     a
-  </footer>
+  </footer><!-- Pie de pagina -->
 
-
+  <!--JS-->
   <script src="./js/navScroll.js"></script>
   <script src="./js/idioma.js"></script>
   <script src="./js/darkmode.js"></script>

@@ -32,8 +32,8 @@ var descriptionProyect1B = document.getElementById('proyect-description-1B');
 var descriptionProyect2 = document.getElementById('proyect-description-2');
 var descriptionProyect3 = document.getElementById('proyect-description-3');
 var descriptionProyect4 = document.getElementById('proyect-description-4');
-var toggleEs=document.getElementById('spanEs');
-var toggleEn=document.getElementById('spanEn');
+var toggleEs = document.getElementById('spanEs');
+var toggleEn = document.getElementById('spanEn');
 var tituloProyecto1A = document.getElementById('proyect-title-1A');
 var tituloProyecto2A = document.getElementById('proyect-title-2A');
 var tituloProyecto3A = document.getElementById('proyect-title-3A');
@@ -72,20 +72,20 @@ function es() {
       toggleEn.textContent = json.es.navbar.idioma.en;
       toggleEs.textContent = json.es.navbar.idioma.es;
       sectionProyecto.textContent = "Proyectos"
-      tituloProyecto1.textContent = json.es.proyects.titles.t1;
-      tituloProyecto2.textContent = json.es.proyects.titles.t2;
-      tituloProyecto3.textContent = json.es.proyects.titles.t3;
-      tituloProyecto4.textContent = json.es.proyects.titles.t4;
-      tituloProyecto1A.textContent = json.es.proyects.titles.t1;
-      tituloProyecto2A.textContent = json.es.proyects.titles.t2;
-      tituloProyecto3A.textContent = json.es.proyects.titles.t3;
-      tituloProyecto4A.textContent = json.es.proyects.titles.t4;
-      descriptionProyect1.textContent = json.es.proyects.description.d1.d1;
-      descriptionProyect1B.textContent = json.es.proyects.description.d1.d2;
-      descriptionProyect2.textContent = json.es.proyects.description.d2;
-      descriptionProyect3.textContent = json.es.proyects.description.d3;
-      descriptionProyect4.textContent = json.es.proyects.description.d4;
-      
+      tituloProyecto1.textContent = json.es.projects.titles.t1;
+      tituloProyecto2.textContent = json.es.projects.titles.t2;
+      tituloProyecto3.textContent = json.es.projects.titles.t3;
+      tituloProyecto4.textContent = json.es.projects.titles.t4;
+      tituloProyecto1A.textContent = json.es.projects.titles.t1;
+      tituloProyecto2A.textContent = json.es.projects.titles.t2;
+      tituloProyecto3A.textContent = json.es.projects.titles.t3;
+      tituloProyecto4A.textContent = json.es.projects.titles.t4;
+      descriptionProyect1.textContent = json.es.projects.description.d1.d1;
+      descriptionProyect1B.textContent = json.es.projects.description.d1.d2;
+      descriptionProyect2.textContent = json.es.projects.description.d2;
+      descriptionProyect3.textContent = json.es.projects.description.d3;
+      descriptionProyect4.textContent = json.es.projects.description.d4;
+
     });
 }
 function en() {
@@ -119,21 +119,21 @@ function en() {
       botonInicial.textContent = "My Work";
       toggleEn.textContent = json.en.navbar.idioma.en;
       toggleEs.textContent = json.en.navbar.idioma.es;
-      sectionProyecto.textContent = "Proyects"
-      tituloProyecto1.textContent = json.en.proyects.titles.t1;
-      tituloProyecto2.textContent = json.en.proyects.titles.t2;
-      tituloProyecto3.textContent = json.en.proyects.titles.t3;
-      tituloProyecto4.textContent = json.en.proyects.titles.t4;
-      tituloProyecto1A.textContent = json.en.proyects.titles.t1;
-      tituloProyecto2A.textContent = json.en.proyects.titles.t2;
-      tituloProyecto3A.textContent = json.en.proyects.titles.t3;
-      tituloProyecto4A.textContent = json.en.proyects.titles.t4;
-      descriptionProyect1.textContent = json.en.proyects.description.d1.d1;
-      descriptionProyect1B.textContent = json.en.proyects.description.d1.d2;
-      descriptionProyect2.textContent = json.en.proyects.description.d2;
-      descriptionProyect3.textContent = json.en.proyects.description.d3;
-      descriptionProyect4.textContent = json.en.proyects.description.d4;
-      
+      sectionProyecto.textContent = "Projects"
+      tituloProyecto1.textContent = json.en.projects.titles.t1;
+      tituloProyecto2.textContent = json.en.projects.titles.t2;
+      tituloProyecto3.textContent = json.en.projects.titles.t3;
+      tituloProyecto4.textContent = json.en.projects.titles.t4;
+      tituloProyecto1A.textContent = json.en.projects.titles.t1;
+      tituloProyecto2A.textContent = json.en.projects.titles.t2;
+      tituloProyecto3A.textContent = json.en.projects.titles.t3;
+      tituloProyecto4A.textContent = json.en.projects.titles.t4;
+      descriptionProyect1.textContent = json.en.projects.description.d1.d1;
+      descriptionProyect1B.textContent = json.en.projects.description.d1.d2;
+      descriptionProyect2.textContent = json.en.projects.description.d2;
+      descriptionProyect3.textContent = json.en.projects.description.d3;
+      descriptionProyect4.textContent = json.en.projects.description.d4;
+
     });
 }
 
