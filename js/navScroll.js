@@ -1,10 +1,11 @@
 var $nav = document.getElementById('navegador');
 var sobremi = document.getElementById('nav-tittle-perfil');
 var porta = document.getElementById('nav-tittle-portafolio');
+var portada = document.getElementById('inicio');
 
 window.addEventListener('scroll', function() {
   let ubicacionactual = window.pageYOffset || document.documentElement.scrollTop
-  //console.log(ubicacionactual);
+  console.log(ubicacionactual);
   if (ubicacionactual >= 630) {
     $nav.style.visibility = "visible";
   }
@@ -18,12 +19,12 @@ function inicio() {
   porta.style.color = "rgba(255, 255, 255, 0.55)"
 }
 function miTrabajo() {
-  window.scrollTo("smooth", 630);
+  window.scrollTo("smooth", 782);
   sobremi.style.color = "rgb(38, 222, 170)";
   porta.style.color = "rgba(255, 255, 255, 0.55)"
 }
 function portafolio() {
-  window.scrollTo("smooth", 1396);
+  window.scrollTo("smooth", 1617);
   porta.style.color = "rgb(38, 222, 170)";
   sobremi.style.color = "rgba(255, 255, 255, 0.55)"
 }

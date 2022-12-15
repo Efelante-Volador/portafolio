@@ -131,14 +131,14 @@
       </article>
       <article id="articulo-perfil-foto">
         <div class="row">
-          <div class="col">
+          <div class="col-xs-12 col-sm-6 col-md-6">
             <img id="mifoto" src="./img/fabo.jpg" class="img-thumbnail" alt="...">
             <h4 id="question"> ¿Quien es este Chico?</h4>
             <p id="question-text">Soy ingeniero en Informática egresado del Inacap, soy de Chile, Santiago Maipu.
               Mis Hobbies son la Magia, la música, el Baloncesto, Me gusta la creación de páginas web y el Café.
             </p>
           </div>
-          <div id="skills-container" class="col">
+          <div id="skills-container" class="col-xs-12 col-sm-6 col-md-6">
             <h4 id="skills">Mis Conocimientos Tecnicos</h4>
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -175,46 +175,35 @@
         <h1 id="title-proyect">Proyectos</h1>
         <div class="container">
           <div class="row">
-            <div class="col-sm-4">
+            <div id="proyecto-1" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 project-item">
               <h4 id="proyect-title-1A">Pagina web "Casita Latina"</h4>
-              <a href="#">
-                <img class="img-proyecto" src="img/ProyectoCasitaLatina.png" alt="Imagen de Pag Casita Latina">
-              </a>
+              <img class="img-proyecto" src="img/ProyectoCasitaLatina.png" alt="Imagen de Pag Casita Latina">
             </div>
-            <div class="col-sm-4">
+            <div id="proyecto-2" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 project-item">
               <h4 id="proyect-title-2A">Bot de Discord</h4>
-              <a href="#">
-                <img class="img-proyecto" src="img/discordBot.jpg" alt="Img Bot discord">
-              </a>
+              <img class="img-proyecto" src="img/discordBot.jpg" alt="Img Bot discord">
             </div>
-            <div class="col-sm-4">
+            <div id="proyecto-3" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 project-item">
               <h4 id="proyect-title-3A">Otro Proyecto</h4>
-              <a href="#">
-                <img class="img-proyecto" src="img/example.jpg" alt="">
-              </a>
+              <img class="img-proyecto" src="img/example.jpg" alt="">
             </div>
-            <div class="col-sm-4">
+            <div id="proyecto-4" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 project-item">
               <h4 id="proyect-title-4A">Otro Proyecto</h4>
-              <a href="#">
-                <img class="img-proyecto" src="img/example.jpg" alt="">
-              </a>
+              <img class="img-proyecto" src="img/example.jpg" alt="">
             </div>
-            <div class="col-sm-4">
+            <!-- 
+  Ejemplo de agregar mas proyectos
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 project-item">
               <h4 id="">Otro Proyecto</h4>
-              <a href="#">
-                <img class="img-proyecto" src="img/example.jpg" alt="">
-              </a>
+              <img class="img-proyecto" src="img/example.jpg" alt="">
             </div>
-            <div class="col-sm-4">
-              <h4 id="">Otro Proyecto</h4>
-              <a href="#">
-                <img class="img-proyecto" src="img/example.jpg" alt="">
-              </a>
-            </div>
+-->
           </div>
         </div>
         <ul>
-          <li class="class-proyecto">
+          <li id="detalle-proyecto-1" class="class-proyecto">
+            <div id="cierre-proyecto-1" class="container-btn-x"><button class="btn btn-x-proyectos">X</button></div>
             <h4 id="proyect-title-1">Pagina web "Casita Latina"</h4>
             <p><span id="proyect-description-1">Este proyecto consistió en una página web informativa y responsiva
                 para una micro-empresa de idiomas, Christian el cliente, es un argentino que se fue a vivir a Polonia,
@@ -224,8 +213,10 @@
                 Latina</a><span id="proyect-description-1B"> se encuentra completamente en Polaco. este
                 sitio se realizo con HTML, CSS
                 (Boostrap), y JavaScript</span></p>
+            <button class="btn btn-info-proyectos">Informacion del Proyecto</button>
           </li>
-          <li class="class-proyecto">
+          <li id="detalle-proyecto-2" class="class-proyecto">
+            <div id="cierre-proyecto-2" class="container-btn-x"><button class="btn btn-x-proyectos">X</button></div>
             <h4 id="proyect-title-2">Bot de Discord</h4>
             <p id="proyect-description-2">Discord es una aplicación que permite comunicarse a través de mensajes de
               texto, voz y video diseñada
@@ -238,16 +229,21 @@
               ejecución, algunas de las acciones que realizaba este bot era, la asignacion de roles a los usuarios,
               dar
               hora Utc y dar la cantidad de usuarios conectados o usuarios dentro de la comunidad.</p>
+            <button class="btn btn-info-proyectos">Informacion del Proyecto</button>
           </li>
-          <li class="class-proyecto">
+          <li id="detalle-proyecto-3" class="class-proyecto">
+            <div id="cierre-proyecto-3" class="container-btn-x"><button class="btn btn-x-proyectos">X</button></div>
             <h4 id="proyect-title-3">Otro Proyecto</h4>
             <p id="proyect-description-3">Detalle del proyecto, que se realizo, para que se realizo y que tecnologias
               utilice.</p>
+            <button class="btn btn-info-proyectos">Informacion del Proyecto</button>
           </li>
-          <li class="class-proyecto">
+          <li id="detalle-proyecto-4" class="class-proyecto">
+            <div id="cierre-proyecto-4" class="container-btn-x"><button class="btn btn-x-proyectos">X</button></div>
             <h4 id="proyect-title-4">Otro Proyecto</h4>
             <p id="proyect-description-4">Detalle del proyecto, que se realizo, para que se realizo y que tecnologias
               utilice.</p>
+            <button class="btn btn-info-proyectos">Informacion del Proyecto</button>
           </li>
         </ul>
       </article>
@@ -270,6 +266,7 @@
   <script src="./js/navScroll.js"></script>
   <script src="./js/idioma.js"></script>
   <script src="./js/darkmode.js"></script>
+  <script src="./js/proyects.js"></script>
 </body>
 
 </html>
