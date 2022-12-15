@@ -213,7 +213,11 @@ footer{
   background-color: #1E232F;
 }
 #mifoto{
-  border-radius:0 25% 0 25%;
+  border-radius:0% 25% 0% 25%;
+  transform: scale(-1, 1);
+}
+.div-foto:not(:hover) #mifoto{
+  transform: scale(1, 1);
 }
 .toggle-theme{
     display: flex;
@@ -262,14 +266,14 @@ footer{
   text-align: center;
 }
 .btn-info-proyectos{
-  --bs-btn-color: #000;
+  --bs-btn-color: var(--white);
   --bs-btn-bg: var(--green2);
   --bs-btn-border-color: var(--green1);
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: var(--main-color);
+  --bs-btn-hover-color: var(--white);
+  --bs-btn-hover-bg: #34a0a4;
   --bs-btn-hover-border-color: var(--blue3);
   --bs-btn-focus-shadow-rgb: 11, 172, 204;
-  --bs-btn-active-color: #000;
+  --bs-btn-active-color: var(--white);
   --bs-btn-active-bg: #3dd5f3;
   --bs-btn-active-border-color: #25cff2;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -292,4 +296,14 @@ footer{
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #dc3545;
   --bs-btn-disabled-border-color: #dc3545;
+}
+.project-item{
+  margin-top:50px;
+  cursor:pointer;
+}
+.project-item:hover h4{
+  color:var(--green4);
+}
+.project-item:hover{
+   margin-top:0px;
 }
