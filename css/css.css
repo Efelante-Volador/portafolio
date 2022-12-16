@@ -65,6 +65,11 @@ body.dark{
   --green4:#99d98c;
   --green5:#b5e48c;
 }
+html{
+  padding: 0px;
+  margin:0px;
+  background:var(--bg-header);
+}
 body{
     font-family: 'Roboto', sans-serif;
     background-color:var(--bg-body);
@@ -243,7 +248,7 @@ footer{
     margin-top:10px;
 }
 .toggle-theme__text:hover{
-  color:var(--main-color);
+  color:rgb(38, 222, 170) !important;
 }
 .class-proyecto{
   position: fixed;
@@ -335,7 +340,7 @@ footer .social-icon{
   margin:10px;
 }
 footer .col-sm-4 a:hover{
-  color:var(--main-color);
+  color:var(--cian);
 }
 .center{
   text-align: center;
