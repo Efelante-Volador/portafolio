@@ -28,8 +28,9 @@
 <body>
   <header>
     <div id="inicio">
-      <p class="titulo-inicial"><span id="t1">Hola yo soy</span> <span id="name">Fabián López Magnan</span>. <span
-          id="t2">Soy desarrollador</span> </p>
+      <p class="titulo-inicial"><span id="t1">Hola soy</span> <span id="name">Fabián López Magnan</span>
+        <span id="t2">y soy desarrollador</span>
+      </p>
       <button id="btn-inicial" type="button" onclick="miTrabajo()" class="boton">Mi trabajo</button>
     </div><!-- Inicio -->
     <nav id="navegador" class="navegador navbar navbar-expand-sm navbar-oscuro bg-oscuro">
@@ -123,13 +124,13 @@
             <li class="list-group-item">
               <h4><img class="social-icon" src="img/icons/responsive.png" alt="Linkedin"><span
                   id="caption3">Responsivo</span></h4>
-              <p><span id="cap3">Diseños responsivos, que funcionen en cualquier dispositivo, grande o pequeño.</span>
+              <p><span id="cap3">Mis proyectos están orientados a todo tipo de dispositivos (grande o pequeño).</span>
               </p>
             </li>
             <li class="list-group-item">
               <h4><img class="social-icon" src="img/icons/dynamic.png" alt="Linkedin"><span
                   id="caption4">Dinámico</span></h4>
-              <p><span id="cap4">Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren
+              <p><span id="cap4">Los sitios web no tienen por qué ser estáticos, me encanta que las páginas cobren
                   vida.</span></p>
             </li>
           </ul>
@@ -140,9 +141,14 @@
           <div class="col-xs-12 col-sm-6 col-md-6 div-foto">
             <img id="mifoto" src="./img/fabo.jpg" class="img-thumbnail" alt="...">
             <h4 id="question"> ¿Quien es este Chico?</h4>
-            <p id="question-text">Soy ingeniero en Informática egresado del Inacap, soy de Chile, Santiago Maipu.
-              Mis Hobbies son la Magia, la música, el Baloncesto, Me gusta la creación de páginas web y el Café.
+            <p id="question-text">Soy Fabian tengo 25 años, soy Ingeniero en Informática. Vivo en Santiago de Chile
+              (Maipú), ¿Mis Hobbies? La
+              magia, la música, el baloncesto, el café y la creación de páginas web.
             </p>
+            <a href="docs/CV - Fabian Andres Lopez Magnan.pdf" download="CV - Fabian Andres Lopez Magnan.pdf">
+              <img class="pdf-icon" src="./img/icons/pdf.png" alt="icono pdf"><span id="dowload-cv">Descargar
+                CV</span>
+            </a>
           </div>
           <div id="skills-container" class="col-xs-12 col-sm-6 col-md-6">
             <h4 id="skills">Mis Conocimientos Tecnicos</h4>
@@ -175,6 +181,7 @@
           </div>
         </div>
       </article>
+
     </section><!-- Perfil -->
     <section id="section-proyectos">
       <article id="article-proyectos">
@@ -261,19 +268,66 @@
           </li>
         </ul>
       </article>
-      <article>
-        <h4>Titulo de articulo</h4>
-        <ul>
-          <li>
-            <p>parrafo de articulo</p>
-          </li>
-        </ul>
-
+      <article id="article-certificados-diplomas">
+        <!-- <h1>Certificados y Diplomas</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <p>Parrafo de articulo donde hablo de mis diplomas</p>
+            </div>
+          </div>
+        </div>-->
       </article>
     </section><!-- Proyectos -->
+    <section id="section-certificados">
+      <article>
+        <h1>Certificados y Reconocimientos</h1>
+
+      </article>
+    </section><!-- Certificados -->
   </main><!-- Perfil y Proyectos -->
   <footer>
-  
+    <div class="container">
+      <div class="center">
+        <h4>Contacto</h4>
+        <p>Teléfono: +569 300 900 86
+          <br>Correo electrónico: fabianlopezmagnan@gmail.com
+        </p>
+      </div>
+      <div class="row center" style="padding:20px;">
+        <h4>Redes sociales</h4>
+        <div class=" col-sm-4 left" id="github-footer">
+          <p>
+            <a class="dropdown-item" target="_blank" href="https://github.com/FabianLopezMagnan">
+              <img class="social-icon" src="img/icons/4x3/github.png" alt="Instagram">Github/ FabianLopezMagnan
+            </a>
+            <span>Sigue mis proyectos en Github.</span>
+          </p>
+        </div><!-- Github -->
+        <div class="col-sm-4 left" id="linkedin-footer">
+          <p>
+            <a class="dropdown-item" target="_blank"
+              href="https://www.linkedin.com/in/fabi%C3%A1n-andr%C3%A9s-l%C3%B3pez-magnan-a1358b177/">
+              <img class="social-icon" src="img/icons/4x3/lk.png" alt="Instagram">Linkedin
+            </a>
+            <span>Puedes conectar conmigo por Linkedin.</span>
+          </p>
+        </div><!-- Linkedin -->
+        <div class="col-sm-4 left" id="instagram-footer">
+          <p>
+            <a class="dropdown-item" target="_blank" href="https://www.instagram.com/efelante_volador/">
+              <img class="social-icon" src="img/icons/4x3/ig.png" alt="Instagram">Instagram/ @efelante_volador
+            </a>
+            <span>Conoce mas de mi vida y Hobbies.</span>
+          </p>
+        </div><!-- Instagram -->
+      </div>
+    </div>
+    <div class="center">
+      <p class="text-center copyright">
+        Copyright &copy; 2022 Fabián López Magnan - Todos los derechos reservados.
+      </p>
+    </div>
   </footer>
 
   <!--JS-->

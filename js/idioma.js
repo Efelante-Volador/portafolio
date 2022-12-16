@@ -39,6 +39,7 @@ var tituloProyecto2A = document.getElementById('proyect-title-2A');
 var tituloProyecto3A = document.getElementById('proyect-title-3A');
 var tituloProyecto4A = document.getElementById('proyect-title-4A');
 var masinfo = document.getElementById('');
+var descargarCV = document.getElementById('dowload-cv');
 
 function es() {
   //console.log("Spanish");
@@ -67,6 +68,7 @@ function es() {
       txt4.textContent = json.es.profile.text.txt4;
       who.textContent = json.es.profile.who.question;
       text.textContent = json.es.profile.who.text;
+      descargarCV.textContent = json.es.profile.who.dowload;
       skills.textContent = json.es.profile.skills;
       botonInicial.textContent = "Mi Trabajo";
       toggleEn.textContent = json.es.navbar.idioma.en;
@@ -85,6 +87,7 @@ function es() {
       descriptionProyect2.textContent = json.es.projects.description.d2;
       descriptionProyect3.textContent = json.es.projects.description.d3;
       descriptionProyect4.textContent = json.es.projects.description.d4;
+
 
     });
 }
@@ -115,6 +118,7 @@ function en() {
       txt4.textContent = json.en.profile.text.txt4;
       who.textContent = json.en.profile.who.question;
       text.textContent = json.en.profile.who.text;
+      descargarCV.textContent = json.en.profile.who.dowload;
       skills.textContent = json.en.profile.skills;
       botonInicial.textContent = "My Work";
       toggleEn.textContent = json.en.navbar.idioma.en;
