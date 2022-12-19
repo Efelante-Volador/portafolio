@@ -301,6 +301,7 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 .item-boder{
   border:double 0.5px grey;
+  background:var(--bg-ul);
 }
 #contenedor-proyectos{
   margin:30px;
@@ -355,4 +356,7 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 .left{
   text-align: left;
+}
+.certificado{
+  width:100%;
 }
