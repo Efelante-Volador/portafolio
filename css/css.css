@@ -112,6 +112,35 @@ article li{
 article ul{
   background-color:var(--bg-ul)!important;
 }
+nav li a:hover{
+    color:rgb(38, 222, 170) !important;
+}
+footer{
+  background-color: var(--bg-footer);
+}
+footer h4{
+  color: var(--cian);
+  
+}
+footer p{
+  color: var(--white);
+}
+.copyright{
+  color:#46464e
+}
+footer{
+  margin-top:100px;
+  padding-top:50px;
+  padding-bottom:10px;
+}
+footer .social-icon{
+  width:40px;
+  height:40px;
+  margin:10px;
+}
+footer .col-sm-4 a:hover{
+  color:var(--cian);
+}
 #name{
     font-family: 'Carter One', cursive;
     color:var(--main-color);
@@ -149,9 +178,6 @@ header #inicio{
 }
 .nav-link:hover {
     cursor:pointer;
-}
-nav li a:hover{
-    color:rgb(38, 222, 170) !important;
 }
 #btn-inicial{
     background-color: transparent;
@@ -221,9 +247,6 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 #skills-container{
   margin-top:5px;
 }
-footer{
-  background-color: var(--bg-footer);
-}
 #mifoto{
   border-radius:0% 25% 0% 25%;
   transform: scale(-1, 1);
@@ -261,15 +284,23 @@ footer{
   box-shadow: 0 0 10px #ccc;
   display:none;
 }
+@media screen and (max-width:800px){
+  .class-proyecto{
+    width:100%;
+    max-width:400px;
+    padding:20px;
+    background: ###FFF;
+    border-radius: 4px;
+  }
+}
 .img-proyecto{
   height:200px;
   width: 100%;
   padding:0px ;
   border-radius:25% 25% 25% 25%;
 }
-.div-proyecto{
-  margin-top:30px;
-  padding: 10px;
+.item-boder{
+  border:double 0.5px grey;
 }
 #contenedor-proyectos{
   margin:30px;
@@ -318,29 +349,6 @@ footer{
 }
 .project-item:hover{
    margin-top:20px;
-}
-footer h4{
-  color: var(--cian);
-  
-}
-footer p{
-  color: var(--white);
-}
-.copyright{
-  color:#46464e
-}
-footer{
-  margin-top:100px;
-  padding-top:50px;
-  padding-bottom:10px;
-}
-footer .social-icon{
-  width:40px;
-  height:40px;
-  margin:10px;
-}
-footer .col-sm-4 a:hover{
-  color:var(--cian);
 }
 .center{
   text-align: center;

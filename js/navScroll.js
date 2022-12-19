@@ -8,7 +8,7 @@ var portada = document.getElementById('inicio');
 window.addEventListener('scroll', function() {
   //Este codigo obtiene la ubicacion del Scroll
   let ubicacionactual = window.pageYOffset || document.documentElement.scrollTop
-  //console.log(ubicacionactual);
+  console.log(ubicacionactual);
 
   //Este codigo hace aparecer o desaparecer el NavBar dependiendo de donde se encuentre el Scroll
   if (ubicacionactual >= 630) {
@@ -32,7 +32,7 @@ function miTrabajo() {
 }
 //Esta funcion desplaza el navegador a la seccion de Proyectos
 function portafolio() {
-  window.scrollTo("smooth", 1617);
+  window.scrollTo("smooth", 1717);
   porta.style.color = "rgb(38, 222, 170)";
   sobremi.style.color = "rgba(255, 255, 255, 0.55)"
 }
