@@ -12,7 +12,7 @@
   --bg-article:#d3d3d3;
   --bg-header:#262834;
   --bg-nav:#1E232F;
-  --bg-ul:#fff;
+  --bg-ul:hsl(40,40%,90%);
   --bg-li:#fff;
   --bg-footer:#262834;
    /* Colores */
@@ -49,7 +49,7 @@ body.dark{
   --bg-article:hsl(0,0%,25%);
   --bg-header:hsl(0,0%,15%);
   --bg-nav:hsl(0,0%,15%);
-  --bg-ul:hsl(0,0%,30%);
+  --bg-ul:hsl(10,0%,30%);
   --bg-li:hsl(0,0%,30%);
   --bg-footer:hsl(0,0%,17%);
    /* Colores */
@@ -363,5 +363,8 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
   transition: clip-path 1.5s;
 }
 .project-item:hover img{
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(100% 14%, 87% 100%, 0 85%, 14% 0);
+}
+.project-item h4{
+  text-decoration:underline;
 }

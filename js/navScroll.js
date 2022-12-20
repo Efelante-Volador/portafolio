@@ -8,7 +8,7 @@ var portada = document.getElementById('inicio');
 window.addEventListener('scroll', function() {
   //Este codigo obtiene la ubicacion del Scroll
   let ubicacionactual = window.pageYOffset || document.documentElement.scrollTop
-  console.log(ubicacionactual);
+  //console.log(ubicacionactual);
   if (/Mobi/.test(navigator.userAgent)) {
     // El usuario está accediendo a tu sitio desde un dispositivo móvil
     if (ubicacionactual >= 600) {

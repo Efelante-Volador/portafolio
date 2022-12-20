@@ -28,7 +28,6 @@ var tituloProyecto2 = document.getElementById('proyect-title-2');
 var tituloProyecto3 = document.getElementById('proyect-title-3');
 var tituloProyecto4 = document.getElementById('proyect-title-4');
 var descriptionProyect1 = document.getElementById('proyect-description-1');
-var descriptionProyect1B = document.getElementById('proyect-description-1B');
 var descriptionProyect2 = document.getElementById('proyect-description-2');
 var descriptionProyect3 = document.getElementById('proyect-description-3');
 var descriptionProyect4 = document.getElementById('proyect-description-4');
@@ -38,8 +37,20 @@ var tituloProyecto1A = document.getElementById('proyect-title-1A');
 var tituloProyecto2A = document.getElementById('proyect-title-2A');
 var tituloProyecto3A = document.getElementById('proyect-title-3A');
 var tituloProyecto4A = document.getElementById('proyect-title-4A');
-var masinfo = document.getElementById('');
 var descargarCV = document.getElementById('dowload-cv');
+//var masinfo = document.getElementById('');
+
+var tituloCertificados = document.getElementById('titulo-certificados');
+var certificadoT1 = document.getElementById('certificado-t1');
+var descargaCertificado = document.getElementById('dowload-certificado');
+var footerContactTitle = document.getElementById('titulo-contacto-footer');
+var footerFono = document.getElementById('footer-fono');
+var footerEmail = document.getElementById('footer-email');
+var footerSocialTitle = document.getElementById('id-social-title');
+var footerGit = document.getElementById('footer-git');
+var footerLk = document.getElementById('footer-lk');
+var footerIg = document.getElementById('footer-ig');
+var copyright = document.getElementById('footer-copyright');
 
 function es() {
   //console.log("Spanish");
@@ -52,11 +63,11 @@ function es() {
       // Establece el contenido del archivo JSON como el texto del párrafo
       titulo1.textContent = json.es.titles.t1;
       titulo2.textContent = json.es.titles.t2;
-      navTittle1.textContent = json.es.navbar.inicio;
-      navTittle2.textContent = json.es.navbar.perfil;
-      navTittle3.textContent = json.es.navbar.portafolio;
-      navTittle4.textContent = json.es.navbar.contacto;
-      navTittle5.textContent = json.es.navbar.idioma.title;
+      navTittle1.textContent = json.es.navbar.home;
+      navTittle2.textContent = json.es.navbar.profile;
+      navTittle3.textContent = json.es.navbar.portfolio;
+      navTittle4.textContent = json.es.navbar.contact;
+      navTittle5.textContent = json.es.navbar.language.title;
       caption1.textContent = json.es.profile.caption.c1;
       caption2.textContent = json.es.profile.caption.c2;
       caption3.textContent = json.es.profile.caption.c3;
@@ -71,8 +82,8 @@ function es() {
       descargarCV.textContent = json.es.profile.who.dowload;
       skills.textContent = json.es.profile.skills;
       botonInicial.textContent = "Mi Trabajo";
-      toggleEn.textContent = json.es.navbar.idioma.en;
-      toggleEs.textContent = json.es.navbar.idioma.es;
+      toggleEn.textContent = json.es.navbar.language.en;
+      toggleEs.textContent = json.es.navbar.language.es;
       sectionProyecto.textContent = "Proyectos"
       tituloProyecto1.textContent = json.es.projects.titles.t1;
       tituloProyecto2.textContent = json.es.projects.titles.t2;
@@ -82,11 +93,21 @@ function es() {
       tituloProyecto2A.textContent = json.es.projects.titles.t2;
       tituloProyecto3A.textContent = json.es.projects.titles.t3;
       tituloProyecto4A.textContent = json.es.projects.titles.t4;
-      descriptionProyect1.textContent = json.es.projects.description.d1.d1;
-      descriptionProyect1B.textContent = json.es.projects.description.d1.d2;
+      descriptionProyect1.textContent = json.es.projects.description.d1;
       descriptionProyect2.textContent = json.es.projects.description.d2;
       descriptionProyect3.textContent = json.es.projects.description.d3;
       descriptionProyect4.textContent = json.es.projects.description.d4;
+      tituloCertificados.textContent = json.es.certification.title;
+      certificadoT1.textContent = json.es.certification.titles.t1;
+      descargaCertificado.textContent = json.es.certification.dowloadCertification;
+      footerContactTitle.textContent = json.es.footer.contact.title;
+      footerFono.textContent = json.es.footer.contact.phone;
+      footerEmail.textContent = json.es.footer.contact.email;
+      footerSocialTitle.textContent = json.es.footer.social.title;
+      footerGit.textContent = json.es.footer.social.git;
+      footerLk.textContent = json.es.footer.social.lk;
+      footerIg.textContent = json.es.footer.social.ig;
+      copyright.textContent = "Todos los derechos reservados.";
 
 
     });
@@ -102,11 +123,11 @@ function en() {
       // Establece el contenido del archivo JSON como el texto del párrafo
       titulo1.textContent = json.en.titles.t1;
       titulo2.textContent = json.en.titles.t2;
-      navTittle1.textContent = json.en.navbar.inicio;
-      navTittle2.textContent = json.en.navbar.perfil;
-      navTittle3.textContent = json.en.navbar.portafolio;
-      navTittle4.textContent = json.en.navbar.contacto;
-      navTittle5.textContent = json.en.navbar.idioma.title;
+      navTittle1.textContent = json.en.navbar.home;
+      navTittle2.textContent = json.en.navbar.profile;
+      navTittle3.textContent = json.en.navbar.portfolio;
+      navTittle4.textContent = json.en.navbar.contact;
+      navTittle5.textContent = json.es.navbar.language.title;
       caption1.textContent = json.en.profile.caption.c1;
       caption2.textContent = json.en.profile.caption.c2;
       caption3.textContent = json.en.profile.caption.c3;
@@ -121,8 +142,8 @@ function en() {
       descargarCV.textContent = json.en.profile.who.dowload;
       skills.textContent = json.en.profile.skills;
       botonInicial.textContent = "My Work";
-      toggleEn.textContent = json.en.navbar.idioma.en;
-      toggleEs.textContent = json.en.navbar.idioma.es;
+      toggleEn.textContent = json.en.navbar.language.en;
+      toggleEs.textContent = json.en.navbar.language.es;
       sectionProyecto.textContent = "Projects"
       tituloProyecto1.textContent = json.en.projects.titles.t1;
       tituloProyecto2.textContent = json.en.projects.titles.t2;
@@ -132,11 +153,21 @@ function en() {
       tituloProyecto2A.textContent = json.en.projects.titles.t2;
       tituloProyecto3A.textContent = json.en.projects.titles.t3;
       tituloProyecto4A.textContent = json.en.projects.titles.t4;
-      descriptionProyect1.textContent = json.en.projects.description.d1.d1;
-      descriptionProyect1B.textContent = json.en.projects.description.d1.d2;
+      descriptionProyect1.textContent = json.en.projects.description.d1;
       descriptionProyect2.textContent = json.en.projects.description.d2;
       descriptionProyect3.textContent = json.en.projects.description.d3;
       descriptionProyect4.textContent = json.en.projects.description.d4;
+      tituloCertificados.textContent = json.en.certification.title;
+      certificadoT1.textContent = json.en.certification.titles.t1;
+      descargaCertificado.textContent = json.en.certification.dowloadCertification;
+      footerContactTitle.textContent = json.en.footer.contact.title;
+      footerFono.textContent = json.en.footer.contact.phone;
+      footerEmail.textContent = json.en.footer.contact.email;
+      footerSocialTitle.textContent = json.en.footer.social.title;
+      footerGit.textContent = json.en.footer.social.git;
+      footerLk.textContent = json.en.footer.social.lk;
+      footerIg.textContent = json.en.footer.social.ig;
+      copyright.textContent = "All rights reserved.";
 
     });
 }
