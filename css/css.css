@@ -164,6 +164,16 @@ header #inicio{
     z-index: 1;
 
 }
+#navegador2{
+    background-color:var(--bg-nav);
+    border-bottom:solid 3px var(--cian);
+    position:fixed !important;
+    left:0;
+    top: 0px;
+    right:0;
+    z-index: 1;
+
+}
 .boton{
     border: 2px solid var(--bg-body-color);
     box-sizing: inherit;

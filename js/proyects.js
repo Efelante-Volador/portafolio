@@ -1,4 +1,4 @@
-document.getElementById('proyecto-1').addEventListener('click', show1);
+/*document.getElementById('proyecto-1').addEventListener('click', show1);
 document.getElementById('cierre-proyecto-1').addEventListener('click', hide1);
 document.getElementById('proyecto-2').addEventListener('click', show2);
 document.getElementById('cierre-proyecto-2').addEventListener('click', hide2);
@@ -34,4 +34,4 @@ function show4() {
 }
 function hide4() {
   detalleProyecto4.style.display = 'none';
-}
+}*/

@@ -77,12 +77,12 @@
                 <span id="nav-tittle-idioma">Idioma</span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" data-value="es" id="jsonBtnEs" href="#"> <img class="bandera"
+                <li><a class="dropdown-item" data-value="es" id="jsonBtnEs"> <img class="bandera"
                       src="img/icons/4x3/es.svg" alt="Bandera español"><span id="spanEs">Español</span></a></li>
                 <li>
                   <hr class="dropdown-divider ">
                 </li>
-                <li><a class="dropdown-item" data-value="es" id="jsonBtnEn" href="#"> <img class="bandera"
+                <li><a class="dropdown-item" data-value="es" id="jsonBtnEn"> <img class="bandera"
                       src="img/icons/4x3/gb.svg" alt="Bandera español"><span id="spanEn">Ingles</span></a></li>
               </ul>
             </li>
@@ -180,7 +180,7 @@
     <section id="section-proyectos">
       <article id="article-proyectos">
         <h1 id="title-proyect" style="margin:50px;">Proyectos</h1>
-        <div class="container">
+        <div class="container" id="contenedor-imagenes-proyecto">
           <div class="row">
             <div id="proyecto-1" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 project-item">
               <h4 id="proyect-title-1A">Pagina web "Casita Latina"</h4>
@@ -206,71 +206,8 @@
               <h4 id="">Otro Proyecto</h4>
               <img class="img-proyecto" src="img/example.jpg" alt="">
             </div>
-            <!-- 
-  Ejemplo de agregar mas proyectos
-            
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 project-item">
-              <h4 id="">Otro Proyecto</h4>
-              <img class="img-proyecto" src="img/example.jpg" alt="">
-            </div>
--->
           </div>
         </div>
-        <ul>
-          <li id="detalle-proyecto-1" class="class-proyecto">
-            <div id="cierre-proyecto-1" class="container-btn-x"><button class="btn btn-x-proyectos">X</button></div>
-            <h4 id="proyect-title-1">Pagina web "Casita Latina"</h4>
-            <p><span id="proyect-description-1">Este proyecto consistió en una pagina web informativa responsiva para
-                una micro empresa de idioma, Christian el cliente, es un Argentino que se fue a vivir a Polonia, hoy en
-                día trabaja enseñando español en este país, el necesitaba un sitio web donde pudiera promocionar sus
-                servicios y dar a conocer su información de contacto su sitio web "Casita Latina" este sitio se
-                encuentra
-                completamente en Polaco. este sitio se realizo con HTML, CSS (Boostrap), y JavaScript.</span>
-              <a target="_blank" href="https://casitalatina.pl/"> Casita Latina </a>
-            </p>
-            <button class="btn btn-info-proyectos">Informacion del Proyecto</button>
-          </li>
-          <li id="detalle-proyecto-2" class="class-proyecto">
-            <div id="cierre-proyecto-2" class="container-btn-x"><button class="btn btn-x-proyectos">X</button></div>
-            <h4 id="proyect-title-2">Bot de Discord</h4>
-            <p id="proyect-description-2">Discord es una aplicación que permite comunicarse a través de mensajes de
-              texto, voz y video diseñada
-              principalmente para comunidades de videojuegos. Se programó un Bot para leer mensajes de texto y
-              reaccionar a ellos mediante ciertos comandos. Estos comandos utilizaban un apóstrofe o palabra clave
-              para
-              interpretarlos como comandos. La aplicación se realizó en Replit, una plataforma de programación que
-              permite ejecutar código en diferentes lenguajes. Se mantuvo en línea mediante un pinger o herramienta de
-              ping que verificaba si el sitio estaba en línea cada 5 minutos. Se utilizó Node js como entorno de
-              ejecución, algunas de las acciones que realizaba este bot era, la asignacion de roles a los usuarios,
-              dar
-              hora Utc y dar la cantidad de usuarios conectados o usuarios dentro de la comunidad.</p>
-            <button class="btn btn-info-proyectos">Informacion del Proyecto</button>
-          </li>
-          <li id="detalle-proyecto-3" class="class-proyecto">
-            <div id="cierre-proyecto-3" class="container-btn-x"><button class="btn btn-x-proyectos">X</button></div>
-            <h4 id="proyect-title-3">Otro Proyecto</h4>
-            <p id="proyect-description-3">Detalle del proyecto, que se realizo, para que se realizo y que tecnologias
-              utilice.</p>
-            <button class="btn btn-info-proyectos">Informacion del Proyecto</button>
-          </li>
-          <li id="detalle-proyecto-4" class="class-proyecto">
-            <div id="cierre-proyecto-4" class="container-btn-x"><button class="btn btn-x-proyectos">X</button></div>
-            <h4 id="proyect-title-4">Otro Proyecto</h4>
-            <p id="proyect-description-4">Detalle del proyecto, que se realizo, para que se realizo y que tecnologias
-              utilice.</p>
-            <button class="btn btn-info-proyectos">Informacion del Proyecto</button>
-          </li>
-        </ul>
-      </article>
-      <article id="article-certificados-diplomas">
-        <!-- <h1>Certificados y Diplomas</h4>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-              <p>Parrafo de articulo donde hablo de mis diplomas</p>
-            </div>
-          </div>
-        </div>-->
       </article>
     </section><!-- Proyectos -->
     <section id="section-certificados">
@@ -337,7 +274,7 @@
   <script src="./js/navScroll.js"></script>
   <script src="./js/idioma.js"></script>
   <script src="./js/darkmode.js"></script>
-  <script src="./js/proyects.js"></script>
+  <script src="./js/procesar.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 

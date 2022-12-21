@@ -1,0 +1,60 @@
+{
+  "es": {
+    "general": {
+      "titleDetail": "Descripción de Proyecto.",
+      "titleTec": "Tecnologías Utilizadas.",
+      "titleLink": "Link demostrativo o en actual funcionamiento."
+    },
+    "project1": {
+      "title": "Pagina Web Casita Latina",
+      "detail": "Detalle del proyecto.",
+      "link": "<a target='_blank' href='https://casitalatina.pl/'>Casita Latina</a>",
+      "img1": "<img src='img/example.jpg' alt='Imagen1' style='width:100%;'>",
+      "img2": "<img src='img/example.jpg' alt='Imagen2' style='width:100%;'>",
+      "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;'>",
+      "img4": "<img src='img/example.jpg' alt='Imagen4' style='width:100%;'>"
+    },
+    "project2": {
+      "title": "Bot de discord.",
+      "detai3": "Detalle del proyecto.",
+      "link": "?"
+    },
+    "project3": {
+      "title": "Titulo Proyecto 3",
+      "detail": "Detalle del proyecto.",
+      "link": "?"
+    },
+    "project4": {
+      "title": "Titulo Proyecto 4",
+      "detail": "Detalle del proyecto.",
+      "link": "?"
+    }
+  },
+  "en": {
+    "general": {
+      "titleDetail": "Project Description.",
+      "titleTec": "Technologies Used.",
+      "titleLink": "Demonstration Link or Currently Operating Link."
+    },
+    "project1": {
+      "title": "Web page Casita Latina",
+      "detail": "Project detail.",
+      "link": "<a target='_blank' href='https://casitalatina.pl/'>Casita Latina</a>"
+    },
+    "project2": {
+      "title": "Bot de discord.",
+      "detai3": "Detalle del proyecto.",
+      "link": "no habilitado de momento."
+    },
+    "project3": {
+      "title": "Titulo Proyecto 3",
+      "detail": "Detalle del proyecto.",
+      "link": "https://casitalatina.pl/"
+    },
+    "project4": {
+      "title": "Titulo Proyecto 4",
+      "detail": "Detalle del proyecto.",
+      "link": "https://casitalatina.pl/"
+    }
+  }
+}
