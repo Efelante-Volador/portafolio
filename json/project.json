@@ -7,27 +7,38 @@
     },
     "project1": {
       "title": "Pagina Web Casita Latina",
-      "detail": "Detalle del proyecto.",
+      "detail": "La página web “Casita Latina” fue creada en 2021. Hecha para Christian, un argentino que actualmente vive y trabaja en Polonia, es una herramienta que le permite publicitar su trabajo como profesor de español en el país. Christian decidió mudarse a Polonia hace algunos años y ha encontrado en la enseñanza del idioma español una forma de aportar a su comunidad y compartir su cultura.",
+      "detail2":"A través de esta página web, Christian ofrece información sobre sus clases de español, que son dirigidas tanto a personas que desean aprender el idioma por primera vez como a aquellas que ya tienen conocimientos básicos y desean mejorar su fluidez y comprensión. La página también incluye una sección con comentarios de algunos de sus alumnos, para motivar a cualquier persona interesada en aprender español.",
+      "detail3":"Además de brindar información sobre sus clases y recursos para aprender español, la página web de Christian también ofrece una breve descripción sobre él y su experiencia como profesor, así como su información de contacto para aquellos interesados en contratar sus servicios o obtener más información.",
+      "detail4":"En resumen, la página web creada para Christian es una plataforma útil y accesible para aquellos que desean aprender español en Polonia y para aquellos que quieren saber más sobre el trabajo de Christian como profesor de español.",
       "link": "<a target='_blank' href='https://casitalatina.pl/'>Casita Latina</a>",
-      "img1": "<img src='img/example.jpg' alt='Imagen1' style='width:100%;'>",
-      "img2": "<img src='img/example.jpg' alt='Imagen2' style='width:100%;'>",
-      "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;'>",
-      "img4": "<img src='img/example.jpg' alt='Imagen4' style='width:100%;'>"
+      "img1": "<img src='img/casitaLatina/img1.PNG' alt='Imagen1' style='width:100%;'>",
+      "img2": "<img src='img/casitaLatina/img2.PNG' alt='Imagen2' style='width:100%;'>",
+      "img3": "<img src='img/casitaLatina/img4.PNG' alt='Imagen3' style='width:100%;'>"
     },
     "project2": {
       "title": "Bot de discord.",
-      "detai3": "Detalle del proyecto.",
-      "link": "?"
+      "detail": "Detalle del proyecto.",
+      "link": "?",
+      "img1": "<img src='img/botDiscord/botdiscord.webp' alt='Imagen1' style='width:100%;'>",
+      "img2": "<img src='img/botDiscord/discordBot.jpg' alt='Imagen2' style='width:100%;'>",
+      "img3": "<img src='img/botDiscord/discordBot.jpg' alt='Imagen3' style='width:100%;'>"
     },
     "project3": {
-      "title": "Titulo Proyecto 3",
+      "title": "Proyecto 3.",
       "detail": "Detalle del proyecto.",
-      "link": "?"
+      "link": "?",
+      "img1": "<img src='img/example.jpg' alt='Imagen1' style='width:100%;'>",
+      "img2": "<img src='img/example.jpg' alt='Imagen2' style='width:100%;'>",
+      "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;'>"
     },
     "project4": {
-      "title": "Titulo Proyecto 4",
+      "title": "Proyecto 3.",
       "detail": "Detalle del proyecto.",
-      "link": "?"
+      "link": "?",
+      "img1": "<img src='img/example.jpg' alt='Imagen1' style='width:100%;'>",
+      "img2": "<img src='img/example.jpg' alt='Imagen2' style='width:100%;'>",
+      "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;'>"
     }
   },
   "en": {
@@ -37,24 +48,36 @@
       "titleLink": "Demonstration Link or Currently Operating Link."
     },
     "project1": {
-      "title": "Web page Casita Latina",
-      "detail": "Project detail.",
-      "link": "<a target='_blank' href='https://casitalatina.pl/'>Casita Latina</a>"
+      "title": "Pagina Web Casita Latina",
+      "detail": "Detalle del proyecto.",
+      "link": "<a target='_blank' href='https://casitalatina.pl/'>Casita Latina</a>",
+      "img1": "<img src='img/casitaLatina/ProyectoCasitaLatina.png' alt='Imagen1' style='width:100%;'>",
+      "img2": "<img src='img/casitaLatina/Casita Latina.png' alt='Imagen2' style='width:100%;'>",
+      "img3": "<img src='img/casitaLatina/Casita Latina.png' alt='Imagen3' style='width:100%;'>"
     },
     "project2": {
       "title": "Bot de discord.",
-      "detai3": "Detalle del proyecto.",
-      "link": "no habilitado de momento."
+      "detail": "Detalle del proyecto.",
+      "link": "?",
+      "img1": "<img src='img/botDiscord/botdiscord.webp' alt='Imagen1' style='width:100%;'>",
+      "img2": "<img src='img/botDiscord/discordBot.jpg' alt='Imagen2' style='width:100%;'>",
+      "img3": "<img src='img/botDiscord/discordBot.jpg' alt='Imagen3' style='width:100%;'>"
     },
     "project3": {
-      "title": "Titulo Proyecto 3",
+      "title": "Proyecto 3.",
       "detail": "Detalle del proyecto.",
-      "link": "https://casitalatina.pl/"
+      "link": "?",
+      "img1": "<img src='img/example.jpg' style='width:100%;'>",
+      "img2": "<img src='img/example.jpg' style='width:100%;'>",
+      "img3": "<img src='img/example.jpg' style='width:100%;'>"
     },
     "project4": {
-      "title": "Titulo Proyecto 4",
+      "title": "Proyecto 4.",
       "detail": "Detalle del proyecto.",
-      "link": "https://casitalatina.pl/"
+      "link": "?",
+      "img1": "<img src='img/example.jpg' style='width:100%;'>",
+      "img2": "<img src='img/example.jpg' style='width:100%;'>",
+      "img3": "<img src='img/example.jpg' style='width:100%;'>"
     }
   }
 }

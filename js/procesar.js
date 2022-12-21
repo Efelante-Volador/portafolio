@@ -4,11 +4,11 @@ document.getElementById('proyecto-3').addEventListener('click', proyecto3);
 document.getElementById('proyecto-4').addEventListener('click', proyecto4);
 
 function proyecto1() {
-  var valor = "casitalatina";
+  var valor = "1";
   window.location.href = "project.html?valor=" + valor;
 }
 function proyecto2() {
-  var valor = "botdiscord";
+  var valor = "2";
   window.location.href = "project.html?valor=" + valor;
 }
 function proyecto3() {

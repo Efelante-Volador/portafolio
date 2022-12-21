@@ -34,12 +34,12 @@
         "text": "Soy Fabian tengo 25 años, soy Ingeniero en Informática. Vivo en Santiago de Chile (Maipú), ¿Mis Hobbies? La magia, la música, el baloncesto, el café y la creación de páginas web.",
         "dowload": "Descargar CV"
       },
-      "skills": "Mis Habilidades técnicas"
+      "skills": "Mis habilidades técnicas"
     },
     "projects": {
       "titles": {
         "t1": "Pagina web 'Casita Latina'",
-        "t2": "Bot Discord",
+        "t2": "Bot de Discord",
         "t3": "otro Proyecto",
         "t4": "otro Proyecto"
       },

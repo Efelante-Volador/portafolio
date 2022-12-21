@@ -5,6 +5,9 @@ const titleLink = document.getElementById('title-link');
 
 const title = document.getElementById('title');
 const detail = document.getElementById('p-detail');
+const detail2 = document.getElementById('p-detail2');
+const detail3 = document.getElementById('p-detail3');
+const detail4 = document.getElementById('p-detail4');
 const link = document.getElementById('link');
 const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
@@ -34,26 +37,31 @@ window.onload = function() {
       titleTec.textContent = json.es.general.titleTec;
       titleLink.textContent = json.es.general.titleLink;
       switch (valor) {
-        case "casitalatina":
+        case "1":
           title.textContent = "Casita Latina"
           detail.textContent = json.es.project1.detail;
+          detail2.textContent = json.es.project1.detail2;
+          detail3.textContent = json.es.project1.detail3;
+          detail4.textContent = json.es.project1.detail4;
           link.innerHTML = json.es.project1.link; //pasando elemento '<A href>' desde el json a 'project.html'
           img1.innerHTML = json.es.project1.img1;
           img2.innerHTML = json.es.project1.img2;
           img3.innerHTML = json.es.project1.img3;
-          img4.innerHTML = json.es.project1.img4;
           break;
-        case "botdiscord":
+        case "2":
           title.textContent = "Bot de Discord"
           detail.textContent = json.es.project2.detail;
           link.textContent = json.es.project2.link;
+          img1.innerHTML = json.es.project2.img1;
+          img2.innerHTML = json.es.project2.img2;
+          img3.innerHTML = json.es.project2.img3;
           break;
-        case 3: //cambiar nombre en doc procesar.js al agregar proyecto nuevo
+        case "3": //cambiar nombre en doc procesar.js al agregar proyecto nuevo
           title.textContent = "Proyecto 3"
           detail.textContent = json.es.project3.detail;
           link.textContent = json.es.project3.link;
           break;
-        case 4:
+        case "4":
           title.textContent = "Proyecto 4"
           detail.textContent = json.es.project4.detail;
           link.textContent = json.es.project4.link;
