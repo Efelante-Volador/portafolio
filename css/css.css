@@ -364,6 +364,9 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 .left{
   text-align: left;
 }
+.right{
+  text-align: right;
+}
 .certificado{
   width:100%;
 }
@@ -377,4 +380,8 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 .project-item h4{
   text-decoration:underline;
+}
+#next-project a{
+  color: inherit;
+  text-decoration: none;
 }

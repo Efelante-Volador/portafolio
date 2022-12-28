@@ -14,7 +14,8 @@
       "link": "<a target='_blank' href='https://casitalatina.pl/'>Casita Latina</a>",
       "img1": "<img src='img/casitaLatina/img1.PNG' alt='Imagen1' style='width:100%;max-height:250px;'>",
       "img2": "<img src='img/casitaLatina/img2.PNG' alt='Imagen2' style='width:100%;max-height:250px;'>",
-      "img3": "<img src='img/casitaLatina/img4.PNG' alt='Imagen3' style='width:100%;max-height:250px;;'>"
+      "img3": "<img src='img/casitaLatina/img4.PNG' alt='Imagen3' style='width:100%;max-height:250px;;'>",
+      "nextProject": "<a href='https://portafolio.efelantevolador.repl.co/project.html?valor=2'>Siguiente Proyecto --> </a>"
     },
     "project2": {
       "title": "Bot de discord.",
@@ -29,7 +30,8 @@
       "img3": "<img src='img/botDiscord/discordBot.jpg' alt='Imagen3' style='width:100%;max-height:250px;'>",
       "tec":"El Bot se programó en Replit, una plataforma de programación que admite diferentes lenguajes de programación. Se mantuvo en línea gracias a una herramienta de ping que verificaba si el sitio estaba en línea cada 5 minutos. El entorno de ejecución utilizado fue Node js.",
       "link":"<a target='_blank' href='https://discord.gg/JDupjXBtpw'>Link Discord</a>",
-      "link2":"<a target='_blank' href=''>Code Discord</a>"
+      "link2":"<a target='_blank' href=''>Code Discord</a>",
+      "nextProject": "<a href='https://portafolio.efelantevolador.repl.co/project.html?valor=3'>Siguiente Proyecto --> </a>"
     },
     "project3": {
       "title": "Proyecto 3.",

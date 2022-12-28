@@ -17,6 +17,7 @@ const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
 const img4 = document.getElementById('img4');
+const nextProject = document.getElementById('next-project');
 
 
 function getUrlVars() {
@@ -52,9 +53,11 @@ window.onload = function() {
           detail6.style.display = "none";
           detail7.style.display = "none";
           link.innerHTML = json.es.project1.link; //pasando elemento '<A href>' desde el json a 'project.html'
+          link2.style.display = "none";
           img1.innerHTML = json.es.project1.img1;
           img2.innerHTML = json.es.project1.img2;
           img3.innerHTML = json.es.project1.img3;
+          nextProject.innerHTML = json.es.project1.nextProject;
           break;
         case "2":
           title.textContent = "Bot de Discord"
@@ -70,6 +73,7 @@ window.onload = function() {
           img1.innerHTML = json.es.project2.img1;
           img2.innerHTML = json.es.project2.img2;
           img3.innerHTML = json.es.project2.img3;
+          nextProject.innerHTML = json.es.project2.nextProject;
 
           break;
         case "3": //cambiar nombre en doc procesar.js al agregar proyecto nuevo
