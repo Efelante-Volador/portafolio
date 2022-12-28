@@ -18,6 +18,7 @@ const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
 const img4 = document.getElementById('img4');
 const nextProject = document.getElementById('next-project');
+const previusProject = document.getElementById('previus-project');
 
 
 function getUrlVars() {
@@ -74,6 +75,7 @@ window.onload = function() {
           img2.innerHTML = json.es.project2.img2;
           img3.innerHTML = json.es.project2.img3;
           nextProject.innerHTML = json.es.project2.nextProject;
+          previusProject.innerHTML = json.es.project2.previusProject;
 
           break;
         case "3": //cambiar nombre en doc procesar.js al agregar proyecto nuevo
