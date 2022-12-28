@@ -8,11 +8,16 @@ const detail = document.getElementById('p-detail');
 const detail2 = document.getElementById('p-detail2');
 const detail3 = document.getElementById('p-detail3');
 const detail4 = document.getElementById('p-detail4');
+const detail5 = document.getElementById('p-detail5');
+const detail6 = document.getElementById('p-detail6');
+const detail7 = document.getElementById('p-detail7');
 const link = document.getElementById('link');
+const link2 = document.getElementById('link2');
 const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
 const img4 = document.getElementById('img4');
+
 
 function getUrlVars() {
   var vars = {};
@@ -43,6 +48,9 @@ window.onload = function() {
           detail2.textContent = json.es.project1.detail2;
           detail3.textContent = json.es.project1.detail3;
           detail4.textContent = json.es.project1.detail4;
+          detail5.style.display = "none";
+          detail6.style.display = "none";
+          detail7.style.display = "none";
           link.innerHTML = json.es.project1.link; //pasando elemento '<A href>' desde el json a 'project.html'
           img1.innerHTML = json.es.project1.img1;
           img2.innerHTML = json.es.project1.img2;
@@ -51,10 +59,18 @@ window.onload = function() {
         case "2":
           title.textContent = "Bot de Discord"
           detail.textContent = json.es.project2.detail;
-          link.textContent = json.es.project2.link;
+          detail2.textContent = json.es.project2.detail2;
+          detail3.textContent = json.es.project2.detail3;
+          detail4.textContent = json.es.project2.detail4;
+          detail5.textContent = json.es.project2.detail5;
+          detail6.textContent = json.es.project2.detail6;
+          detail7.textContent = json.es.project2.detail7;
+          link.innerHTML = json.es.project2.link;
+          link2.innerHTML = json.es.project2.link2;
           img1.innerHTML = json.es.project2.img1;
           img2.innerHTML = json.es.project2.img2;
           img3.innerHTML = json.es.project2.img3;
+
           break;
         case "3": //cambiar nombre en doc procesar.js al agregar proyecto nuevo
           title.textContent = "Proyecto 3"
