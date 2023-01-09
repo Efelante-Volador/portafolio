@@ -11,7 +11,7 @@
       "detail2":"A través de esta página web, Christian ofrece información sobre sus clases de español, que son dirigidas tanto a personas que desean aprender el idioma por primera vez como a aquellas que ya tienen conocimientos básicos y desean mejorar su fluidez y comprensión. La página también incluye una sección con comentarios de algunos de sus alumnos, para motivar a cualquier persona interesada en aprender español.",
       "detail3":"Además de brindar información sobre sus clases y recursos para aprender español, la página web de Christian también ofrece una breve descripción sobre él y su experiencia como profesor, así como su información de contacto para aquellos interesados en contratar sus servicios o obtener más información.",
       "detail4":"En resumen, la página web creada para Christian es una plataforma útil y accesible para aquellos que desean aprender español en Polonia y para aquellos que quieren saber más sobre el trabajo de Christian como profesor de español.",
-      "link": "<a target='_blank' href='https://casitalatina.pl/'>Casita Latina</a>",
+      "link": "<p> Link oficial para acceder al sitio web: <a target='_blank' href='https://casitalatina.pl/'>Casita Latina</a></p>",
       "img1": "<img src='img/casitaLatina/img1.PNG' alt='Imagen1' style='width:100%;max-height:250px;'>",
       "img2": "<img src='img/casitaLatina/img2.PNG' alt='Imagen2' style='width:100%;max-height:250px;'>",
       "img3": "<img src='img/casitaLatina/img4.PNG' alt='Imagen3' style='width:100%;max-height:250px;;'>",
@@ -29,26 +29,42 @@
       "img2": "<img src='img/botDiscord/discordBot.jpg' alt='Imagen2' style='width:100%;max-height:250px;'>",
       "img3": "<img src='img/botDiscord/discordBot.jpg' alt='Imagen3' style='width:100%;max-height:250px;'>",
       "tec":"El Bot se programó en Replit, una plataforma de programación que admite diferentes lenguajes de programación. Se mantuvo en línea gracias a una herramienta de ping que verificaba si el sitio estaba en línea cada 5 minutos. El entorno de ejecución utilizado fue Node js.",
-      "link":"<a target='_blank' href='https://discord.gg/JDupjXBtpw'>Link Discord</a>",
-      "link2":"<a target='_blank' href=''>Code Discord</a>",
+      "link":"<p>Link donde podras entrar a mi servidor para hacer pruebas con el bot: <a target='_blank' href='https://discord.com/invite/zggC9jGj'>Link Discord</a></p><p> Link para invitar el bot a tu servidor: <a target='_blank' href='https://discord.com/oauth2/authorize?client_id=868136648066625607&permissions=8&scope=bot'>Link invitación</a></p><p>Es aconsejable utilizar el comando !help una vez que hayas accedido al servidor para ver todas las acciones que puede realizar el bot.</p>",
+      "link2":"",
       "nextProject": "<a href='https://portafolio.efelantevolador.repl.co/project.html?valor=3'>Siguiente Proyecto --> </a>",
-      "previusProject": "<a href='https://portafolio.efelantevolador.repl.co/project.html?valor=1'> <-- Proyecto Anterior </a>"
+      "previusProject":"<a href='https://portafolio.efelantevolador.repl.co/project.html?valor=1'> <-- Proyecto Anterior </a>"
     },
     "project3": {
-      "title": "Proyecto 3.",
+      "title": "Proyecto N°3.",
       "detail": "Detalle del proyecto.",
-      "link": "?",
+      "link": "LINK",
       "img1": "<img src='img/example.jpg' alt='Imagen1' style='width:100%;max-height:250px;'>",
       "img2": "<img src='img/example.jpg' alt='Imagen2' style='width:100%;max-height:250px;'>",
-      "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;max-height:250px;'>"
+      "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;max-height:250px;'>",
+      "nextProject":"<a href='https://portafolio.efelantevolador.repl.co/project.html?valor=4'>Siguiente Proyecto --> </a>",
+      "previusProject":"<a href='https://portafolio.efelantevolador.repl.co/project.html?valor=2'> <-- Proyecto Anterior </a>"
     },
     "project4": {
-      "title": "Proyecto 3.",
+      "title": "Proyecto 4.",
       "detail": "Detalle del proyecto.",
       "link": "?",
       "img1": "<img src='img/example.jpg' alt='Imagen1' style='width:100%;max-height:250px;'>",
       "img2": "<img src='img/example.jpg' alt='Imagen2' style='width:100%;max-height:250px;'>",
-      "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;max-height:250px;'>"
+      "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;max-height:250px;'>",
+      "previusProject":"<a href='https://portafolio.efelantevolador.repl.co/project.html?valor=3'> <-- Proyecto Anterior </a>"
+    },
+    "footer": {
+      "contact": {
+        "title": "Contacto",
+        "phone": "Teléfono",
+        "email": "Correo electrónico"
+      },
+      "social": {
+        "title": "Redes Sociales",
+        "git": "Sigue mis proyectos en GitHub.",
+        "lk": "Puedes conectar conmigo por LinkedIn.",
+        "ig": "Conoce más de mi vida y hobbies."
+      }
     }
   },
   "en": {
@@ -100,6 +116,19 @@
       "img1": "<img src='img/example.jpg' alt='Imagen1' style='width:100%;max-height:250px;'>",
       "img2": "<img src='img/example.jpg' alt='Imagen2' style='width:100%;max-height:250px;'>",
       "img3": "<img src='img/example.jpg' alt='Imagen3' style='width:100%;max-height:250px;'>"
+    },
+    "footer": {
+      "contact": {
+        "title": "Contact",
+        "phone": "Phone",
+        "email": "Email"
+      },
+      "social": {
+        "title": "Social media",
+        "git": "Follow my projects on GitHub.",
+        "lk": "You can connect with me on LinkedIn.",
+        "ig": "Learn more about my life and hobbies."
+      }
     }
   }
 }

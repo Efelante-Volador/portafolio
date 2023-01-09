@@ -1,8 +1,10 @@
+document.getElementById('jsonBtnEs').addEventListener('click', idiomaEs);
+document.getElementById('jsonBtnEn').addEventListener('click', idiomaEn);
+
 // Variables HTML de 
 const titleDetail = document.getElementById('title-detail');
 const titleTec = document.getElementById('title-tec');
 const titleLink = document.getElementById('title-link');
-
 const title = document.getElementById('title');
 const detail = document.getElementById('p-detail');
 const detail2 = document.getElementById('p-detail2');
@@ -17,8 +19,18 @@ const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
 const img4 = document.getElementById('img4');
-const nextProject = document.getElementById('next-project');
+
 const previusProject = document.getElementById('previus-project');
+const nextProject = document.getElementById('next-project');
+
+var footerContactTitle = document.getElementById('titulo-contacto-footer');
+var footerFono = document.getElementById('footer-fono');
+var footerEmail = document.getElementById('footer-email');
+var footerSocialTitle = document.getElementById('id-social-title');
+var footerGit = document.getElementById('footer-git');
+var footerLk = document.getElementById('footer-lk');
+var footerIg = document.getElementById('footer-ig');
+var copyright = document.getElementById('footer-copyright');
 
 
 function getUrlVars() {
@@ -31,71 +43,44 @@ function getUrlVars() {
 function getUrlParameter(name) {
   return getUrlVars()[name];
 }
+
 window.onload = function() {
+
   var valor = getUrlParameter("valor");
-  fetch('json/project.json')
+  fetch('../json/project.json')
     .then(function(res) {
       // Devuelve el contenido del archivo JSON parseado como un objeto JavaScript
       return res.json();
     })
     .then(function(json) {
       // Establece el contenido del archivo JSON como el texto del párrafo dependiendo del valor en el url
-      titleDetail.textContent = json.es.general.titleDetail;
-      titleTec.textContent = json.es.general.titleTec;
-      titleLink.textContent = json.es.general.titleLink;
-      switch (valor) {
-        case "1":
-          title.textContent = "Casita Latina"
-          detail.textContent = json.es.project1.detail;
-          detail2.textContent = json.es.project1.detail2;
-          detail3.textContent = json.es.project1.detail3;
-          detail4.textContent = json.es.project1.detail4;
-          detail5.style.display = "none";
-          detail6.style.display = "none";
-          detail7.style.display = "none";
-          link.innerHTML = json.es.project1.link; //pasando elemento '<A href>' desde el json a 'project.html'
-          link2.style.display = "none";
-          img1.innerHTML = json.es.project1.img1;
-          img2.innerHTML = json.es.project1.img2;
-          img3.innerHTML = json.es.project1.img3;
-          nextProject.innerHTML = json.es.project1.nextProject;
-          break;
-        case "2":
-          title.textContent = "Bot de Discord"
-          detail.textContent = json.es.project2.detail;
-          detail2.textContent = json.es.project2.detail2;
-          detail3.textContent = json.es.project2.detail3;
-          detail4.textContent = json.es.project2.detail4;
-          detail5.textContent = json.es.project2.detail5;
-          detail6.textContent = json.es.project2.detail6;
-          detail7.textContent = json.es.project2.detail7;
-          link.innerHTML = json.es.project2.link;
-          link2.innerHTML = json.es.project2.link2;
-          img1.innerHTML = json.es.project2.img1;
-          img2.innerHTML = json.es.project2.img2;
-          img3.innerHTML = json.es.project2.img3;
-          nextProject.innerHTML = json.es.project2.nextProject;
-          previusProject.innerHTML = json.es.project2.previusProject;
-
-          break;
-        case "3": //cambiar nombre en doc procesar.js al agregar proyecto nuevo
-          title.textContent = "Proyecto 3"
-          detail.textContent = json.es.project3.detail;
-          link.textContent = json.es.project3.link;
-          break;
-        case "4":
-          title.textContent = "Proyecto 4"
-          detail.textContent = json.es.project4.detail;
-          link.textContent = json.es.project4.link;
-          break;
-        default:
-          console.log(valor);
-          break;
+      const toggleIcon = document.getElementById("toggle-icon");
+      const toggleText = document.getElementById("texto-toggle");
+      const titleValue = title.innerHTML;
+      if (valor == "1") {//dark
+        document.body.classList.add("dark");
+        toggleIcon.src = '../img/icons/sun.png'
+        toggleText.textContent = 'Light Mode';
+        if (titleValue == "Bot de discord") {
+          previusProject.innerHTML = "<a href='../project/casitaLatina.html?valor=1'> <-- Proyecto Anterior </a>";
+          nextProject.innerHTML = "<a href='../project/casitaLatina.html?valor=1'> Siguiente Proyecto--> </a>";
+        } else if (titleValue == "Casita Latina") {
+          nextProject.innerHTML = "<a href='../project/botDiscord.html?valor=1'> Siguiente Proyecto--> </a>";
+        }
+      } else if (valor == "2") {//light
+        if (titleValue == "Bot de discord") {
+          previusProject.innerHTML = "<a href='../project/casitaLatina.html?valor=2'> <-- Proyecto Anterior </a>";
+          nextProject.innerHTML = "<a href='../project/casitaLatina.html?valor=2'> Siguiente Proyecto--> </a>";
+        } else if (titleValue == "Casita Latina") {
+          nextProject.innerHTML = "<a href='../project/botDiscord.html?valor=2'> Siguiente Proyecto--> </a>";
+        }
       }
+
     });
 }
+
 function idiomaEs() { // agregar traduccion de footer
-  fetch('json/project.json')
+  fetch('../json/project.json')
     .then(function(res) {
       return res.json();
     })
@@ -103,10 +88,19 @@ function idiomaEs() { // agregar traduccion de footer
       titleDetail.textContent = json.es.general.titleDetail;
       titleTec.textContent = json.es.general.titleTec;
       titleLink.textContent = json.es.general.titleLink;
+
+      footerContactTitle.textContent = json.es.footer.contact.title;
+      footerFono.textContent = json.es.footer.contact.phone;
+      footerEmail.textContent = json.es.footer.contact.email;
+      footerSocialTitle.textContent = json.es.footer.social.title;
+      footerGit.textContent = json.es.footer.social.git;
+      footerLk.textContent = json.es.footer.social.lk;
+      footerIg.textContent = json.es.footer.social.ig;
+      copyright.textContent = "Todos los derechos reservados.";
     });
 }
 function idiomaEn() { // agregar traduccion de footer
-  fetch('json/project.json')
+  fetch('../json/project.json')
     .then(function(res) {
       return res.json();
     })
@@ -114,5 +108,14 @@ function idiomaEn() { // agregar traduccion de footer
       titleDetail.textContent = json.en.general.titleDetail;
       titleTec.textContent = json.en.general.titleTec;
       titleLink.textContent = json.en.general.titleLink;
+
+      footerContactTitle.textContent = json.en.footer.contact.title;
+      footerFono.textContent = json.en.footer.contact.phone;
+      footerEmail.textContent = json.en.footer.contact.email;
+      footerSocialTitle.textContent = json.en.footer.social.title;
+      footerGit.textContent = json.en.footer.social.git;
+      footerLk.textContent = json.en.footer.social.lk;
+      footerIg.textContent = json.en.footer.social.ig;
+      copyright.textContent = "All rights reserved.";
     });
 }

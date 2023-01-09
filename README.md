@@ -1,4 +1,7 @@
-Work in progress
-# portafolio
-Proyecto portafolio personal con mi información y mis trabajos
-
+"title": "Bot de discord.",
+      "detail": "Discord es una aplicación de comunicación en línea gratuita diseñada especialmente para los gamers. Permite a los usuarios comunicarse entre sí a través de mensajes de texto, voz y video en tiempo real. Discord también incluye una variedad de herramientas de moderación y personalización para que los usuarios puedan crear sus propios servidores y canales de chat. Además, Discord cuenta con una amplia gama de integraciones con otras aplicaciones y servicios, como Spotify, Twitch y YouTube, lo que facilita aún más la comunicación entre los usuarios. Dentro de esas herramientas cuenta con una funcionalidad llamada Bot.",
+      "detail2":"Un 'Bot' en Discord es un programa automatizado que puede interactuar con los usuarios de un servidor de Discord a través de comandos y acciones predefinidas.",
+      "detail3":"El Bot de Discord es un proyecto que tiene como objetivo facilitar la gestión de comunidades en Discord. Este Bot cuenta con diversas funcionalidades que permiten automatizar algunos procesos y agregar ciertas características únicas a una comunidad específica. Algunas de las tareas que este Bot puede realizar son:",
+      "detail4":"1) Asignación de roles a los usuarios: El Bot puede asignar roles a los usuarios de manera automática o mediante comandos especiales. Esto permite personalizar la experiencia de usuario y otorgar ciertos permisos a ciertos grupos de usuarios.",
+      "detail5":"2) Indicación de la hora en UTC: El Bot puede mostrar la hora en el formato Coordinated Universal Time (UTC) a través de un comando especial. Esto puede ser útil para coordinar actividades en línea a nivel internacional.",
+      "detail6":"3) Conteo de usuarios conectados o presentes: El Bot puede mostrar cuántos usuarios están conectados o presentes en un momento determinado a través de un comando especial. Esto puede ser útil para saber cuánta gente hay disponible para jugar o participar en actividades.",
