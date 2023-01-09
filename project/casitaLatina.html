@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a id="nav-tittle-inicio" class="nav-link active" href="../index.html" aria-current="page">Volver</a>
+            <a id="volver" class="nav-link active" aria-current="page">Volver</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -40,7 +40,7 @@
               <li><a class="dropdown-item" data-value="es" id="jsonBtnEs"> <img class="bandera"
                     src="../img/icons/4x3/es.svg" alt="Bandera español"><span id="spanEs">Español</span></a></li>
               <li>
-                <hr class="dropdown-divider ">
+                <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" data-value="es" id="jsonBtnEn"> <img class="bandera"
                     src="../img/icons/4x3/gb.svg" alt="Bandera español"><span id="spanEn">Ingles</span></a></li>
@@ -62,67 +62,72 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h4 id="previus-project" class="left"></h4>
+            <h4 id="previus-project" class="left">
+              <a id="prev"></a>
+            </h4>
           </div>
           <div class="col-md-6">
-            <h4 id="next-project" class="right">x</h4>
+            <h4 id="next-project" class="right"> <a id="next">Siguiente Proyecto --></a> </h4>
           </div>
         </div>
       </div>
       <article id="imagenes-proyecto">
         <div class="container">
           <div class="row">
-            <div id="img1" class="col-md-4" style="padding:20px;">
-              <img src='../img/casitaLatina/img1.PNG' alt='Imagen1' style='width:100%;max-height:250px;'>
+            <div class="col-md-12" style="text-align:center;">
+              <h4 id="title-detail">Descripción de Proyecto.</h4>
             </div>
-            <div id="img2" class="col-md-4" style="padding:20px;">
+            <div id="img1" class="col-md-6" style="padding:20px;margin-top:20px;">
+              <img src='../img/casitaLatina/img1.PNG' alt='Imagen1' style='width:100%;max-height:300px;'>
+            </div>
+            <div class="col-md-6" style="padding:20px;">
+              <p id="p-detail">La página web “Casita Latina” fue creada en 2021. Hecha para Christian, un argentino que
+                actualmente vive y trabaja en Polonia, es una herramienta que le permite publicitar su trabajo como
+                profesor de español en el país. Christian decidió mudarse a Polonia hace algunos años y ha encontrado en
+                la enseñanza del idioma español una forma de aportar a su comunidad y compartir su cultura.</p>
+              <p id="p-detail2">A través de esta página web, Christian ofrece información sobre sus clases de español,
+                que
+                son dirigidas tanto a personas que desean aprender el idioma por primera vez como a aquellas que ya
+                tienen
+                conocimientos básicos y desean mejorar su fluidez y comprensión. La página también incluye una sección
+                con
+                comentarios de algunos de sus alumnos, para motivar a cualquier persona interesada en aprender español.
+              </p>
+            </div>
+            <div class="col-md-6" style="padding:20px;">
+              <p id="p-detail3">Además de brindar información sobre sus clases y recursos para aprender español, la
+                página
+                web de Christian también ofrece una breve descripción sobre él y su experiencia como profesor, así como
+                su
+                información de contacto para aquellos interesados en contratar sus servicios o obtener más información.
+              </p>
+              <p id="p-detail4">En resumen, la página web creada para Christian es una plataforma útil y accesible para
+                aquellos que desean aprender español en Polonia y para aquellos que quieren saber más sobre el trabajo
+                de
+                Christian como profesor de español.
+              </p>
+            </div>
+            <div id="img2" class="col-md-6" style="padding:20px;">
               <img src='../img/casitaLatina/img2.PNG' alt='Imagen2' style='width:100%;max-height:250px;'>
             </div>
-            <div id="img3" class="col-md-4" style="padding:20px;">
+            <div id="img3" class="col-md-6" style="padding:20px;">
               <img src='../img/casitaLatina/img3.PNG' alt='Imagen1' style='width:100%;max-height:250px;'>
+            </div>
+            <div class="col-md-6 center" style="margin-top:20px;">
+              <h4 id="title-tec">Tecnologias usadas</h4>
+              <p><span id="tec1">CSS: </span><span id="tec-d1">Lenguaje utilizado para generar
+                  decoracion
+                  de sitio web.</span></p>
+              <p><span id="tec2">HTML: </span><span id="tec-d2">Lenguaje utilizado para generar
+                  estructura
+                  de sitio web.</span></p>
+              <p><span id="tec3">Boostrap: </span><span id="tec-d3">Tecnologia utilizada para hacer
+                  responsivo el sitio web.</span></p>
             </div>
           </div>
         </div>
       </article>
-      <article id="detalle-proyecto">
-        <div class="container">
-          <div class="row">
-            <h4 id="title-detail">Descripción de Proyecto.</h4>
-            <p id="p-detail">La página web “Casita Latina” fue creada en 2021. Hecha para Christian, un argentino que
-              actualmente vive y trabaja en Polonia, es una herramienta que le permite publicitar su trabajo como
-              profesor de español en el país. Christian decidió mudarse a Polonia hace algunos años y ha encontrado en
-              la enseñanza del idioma español una forma de aportar a su comunidad y compartir su cultura.</p>
-            <p id="p-detail2">A través de esta página web, Christian ofrece información sobre sus clases de español, que
-              son dirigidas tanto a personas que desean aprender el idioma por primera vez como a aquellas que ya tienen
-              conocimientos básicos y desean mejorar su fluidez y comprensión. La página también incluye una sección con
-              comentarios de algunos de sus alumnos, para motivar a cualquier persona interesada en aprender español.
-            </p>
-            <p id="p-detail3">Además de brindar información sobre sus clases y recursos para aprender español, la página
-              web de Christian también ofrece una breve descripción sobre él y su experiencia como profesor, así como su
-              información de contacto para aquellos interesados en contratar sus servicios o obtener más información.
-            </p>
-            <p id="p-detail4">En resumen, la página web creada para Christian es una plataforma útil y accesible para
-              aquellos que desean aprender español en Polonia y para aquellos que quieren saber más sobre el trabajo de
-              Christian como profesor de español.</p>
-          </div>
-        </div>
-      </article>
-      <article id="tecnologias-proyecto">
-        <div class="container">
-          <div class="row">
-            <h4 id="title-tec">Tecnologias usadas</h4>
-            <p><span id="tec1" style="color:blue;">CSS: </span><span id="tec-d1">Lenguaje utilizado para generar
-                decoracion
-                de sitio web.</span></p>
-            <p><span id="tec2" style="color:blue;">HTML: </span><span id="tec-d2">Lenguaje utilizado para generar
-                estructura
-                de sitio web.</span></p>
-            <p><span id="tec3" style="color:blue;">Boostrap: </span><span id="tec-d3">Tecnologia utilizada para hacer
-                responsivo el sitio web.</span></p>
-          </div>
-        </div>
-      </article>
-      <article id="linkDemo-proyecto">
+      <article id="linkDemo-proyecto" class="center">
         <div class="container">
           <div class="row">
             <h4 id="title-link">Link de Demostracion o funcionamiento actual.</h4>

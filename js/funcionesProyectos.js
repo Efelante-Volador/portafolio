@@ -1,5 +1,8 @@
 document.getElementById('jsonBtnEs').addEventListener('click', idiomaEs);
 document.getElementById('jsonBtnEn').addEventListener('click', idiomaEn);
+document.getElementById('volver').addEventListener('click', redirect);
+document.getElementById('next').addEventListener('click', avanzar);
+document.getElementById('prev').addEventListener('click', retroceder);
 
 // Variables HTML de 
 const titleDetail = document.getElementById('title-detail');
@@ -20,9 +23,11 @@ const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
 const img4 = document.getElementById('img4');
 
+// avanzar y volver en los proyectos.
 const previusProject = document.getElementById('previus-project');
 const nextProject = document.getElementById('next-project');
 
+//footer para cambio de idioma
 var footerContactTitle = document.getElementById('titulo-contacto-footer');
 var footerFono = document.getElementById('footer-fono');
 var footerEmail = document.getElementById('footer-email');
@@ -43,9 +48,7 @@ function getUrlVars() {
 function getUrlParameter(name) {
   return getUrlVars()[name];
 }
-
 window.onload = function() {
-
   var valor = getUrlParameter("valor");
   fetch('../json/project.json')
     .then(function(res) {
@@ -56,29 +59,13 @@ window.onload = function() {
       // Establece el contenido del archivo JSON como el texto del párrafo dependiendo del valor en el url
       const toggleIcon = document.getElementById("toggle-icon");
       const toggleText = document.getElementById("texto-toggle");
-      const titleValue = title.innerHTML;
       if (valor == "1") {//dark
         document.body.classList.add("dark");
         toggleIcon.src = '../img/icons/sun.png'
         toggleText.textContent = 'Light Mode';
-        if (titleValue == "Bot de discord") {
-          previusProject.innerHTML = "<a href='../project/casitaLatina.html?valor=1'> <-- Proyecto Anterior </a>";
-          nextProject.innerHTML = "<a href='../project/casitaLatina.html?valor=1'> Siguiente Proyecto--> </a>";
-        } else if (titleValue == "Casita Latina") {
-          nextProject.innerHTML = "<a href='../project/botDiscord.html?valor=1'> Siguiente Proyecto--> </a>";
-        }
-      } else if (valor == "2") {//light
-        if (titleValue == "Bot de discord") {
-          previusProject.innerHTML = "<a href='../project/casitaLatina.html?valor=2'> <-- Proyecto Anterior </a>";
-          nextProject.innerHTML = "<a href='../project/casitaLatina.html?valor=2'> Siguiente Proyecto--> </a>";
-        } else if (titleValue == "Casita Latina") {
-          nextProject.innerHTML = "<a href='../project/botDiscord.html?valor=2'> Siguiente Proyecto--> </a>";
-        }
       }
-
     });
 }
-
 function idiomaEs() { // agregar traduccion de footer
   fetch('../json/project.json')
     .then(function(res) {
@@ -118,4 +105,43 @@ function idiomaEn() { // agregar traduccion de footer
       footerIg.textContent = json.en.footer.social.ig;
       copyright.textContent = "All rights reserved.";
     });
+}
+function redirect() {
+  var valor = getUrlParameter("valor");
+  if (valor == "1") {//dark
+    window.location.href = "../index.html?valor=" + valor;
+  }
+  else if (valor == "2") {//light
+    window.location.href = "../index.html?valor=" + valor;
+  }
+  else {//light por defecto
+    window.location.href = "../index.html?valor=" + valor;
+  }
+}
+function avanzar() {
+  var titleValue = title.innerHTML;
+  var valor = getUrlParameter("valor");
+  switch (titleValue) {
+    case "Bot de discord":
+      window.location.href = "../project/casitaLatina.html?valor=" + valor;
+      break;
+    case "Casita Latina":
+      window.location.href = "../project/botDiscord.html?valor=" + valor;
+      break;
+    default:
+      // Ejecuta algún código en caso de que ninguno de los casos anteriores se cumpla
+      break;
+  }
+}
+function retroceder() {
+  var titleValue = title.innerHTML;
+  var valor = getUrlParameter("valor");
+  switch (titleValue) {
+    case "Bot de discord":
+      window.location.href = "../project/casitaLatina.html?valor=" + valor;
+      break;
+    default:
+      // Ejecuta algún código en caso de que ninguno de los casos anteriores se cumpla
+      break;
+  }
 }
