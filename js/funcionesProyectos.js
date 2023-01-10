@@ -49,33 +49,32 @@ function getUrlParameter(name) {
   return getUrlVars()[name];
 }
 window.onload = function() {
-  var valor = getUrlParameter("valor");
-  fetch('../json/project.json')
-    .then(function(res) {
-      // Devuelve el contenido del archivo JSON parseado como un objeto JavaScript
-      return res.json();
-    })
-    .then(function(json) {
-      // Establece el contenido del archivo JSON como el texto del párrafo dependiendo del valor en el url
-      const toggleIcon = document.getElementById("toggle-icon");
-      const toggleText = document.getElementById("texto-toggle");
-      if (valor == "1") {//dark
-        document.body.classList.add("dark");
-        toggleIcon.src = '../img/icons/sun.png'
-        toggleText.textContent = 'Light Mode';
-      }
-    });
+  var idioma = localStorage.getItem("idioma");
+  if(idioma=="en"){
+    idiomaEn();
+  }
+  var pageColors = getUrlParameter("pageColors");
+  const toggleIcon = document.getElementById("toggle-icon");
+  const toggleText = document.getElementById("texto-toggle");
+  if (pageColors == "1") {//dark
+    document.body.classList.add("dark");
+    toggleIcon.src = '../img/icons/sun.png'
+    toggleText.textContent = 'Light Mode';
+  }
 }
-function idiomaEs() { // agregar traduccion de footer
+function idiomaEs() {
   fetch('../json/project.json')
     .then(function(res) {
       return res.json();
     })
     .then(function(json) {
+      //establecemos un local storage para mantener el estado español
+      localStorage.setItem("idioma", "es");
+      //titulos generales
       titleDetail.textContent = json.es.general.titleDetail;
       titleTec.textContent = json.es.general.titleTec;
       titleLink.textContent = json.es.general.titleLink;
-
+      //footer
       footerContactTitle.textContent = json.es.footer.contact.title;
       footerFono.textContent = json.es.footer.contact.phone;
       footerEmail.textContent = json.es.footer.contact.email;
@@ -86,16 +85,19 @@ function idiomaEs() { // agregar traduccion de footer
       copyright.textContent = "Todos los derechos reservados.";
     });
 }
-function idiomaEn() { // agregar traduccion de footer
+function idiomaEn() {
   fetch('../json/project.json')
     .then(function(res) {
       return res.json();
     })
     .then(function(json) {
+      //establecemos un local storage para mantener el estado español
+      localStorage.setItem("idioma", "en");
+      //titulos generales
       titleDetail.textContent = json.en.general.titleDetail;
       titleTec.textContent = json.en.general.titleTec;
       titleLink.textContent = json.en.general.titleLink;
-
+      //footer
       footerContactTitle.textContent = json.en.footer.contact.title;
       footerFono.textContent = json.en.footer.contact.phone;
       footerEmail.textContent = json.en.footer.contact.email;
@@ -107,26 +109,26 @@ function idiomaEn() { // agregar traduccion de footer
     });
 }
 function redirect() {
-  var valor = getUrlParameter("valor");
-  if (valor == "1") {//dark
-    window.location.href = "../index.html?valor=" + valor;
+  var pageColors = getUrlParameter("pageColors");
+  if (pageColors == "1") {//dark
+    window.location.href = "../index.html?pageColors=" + pageColors;
   }
-  else if (valor == "2") {//light
-    window.location.href = "../index.html?valor=" + valor;
+  else if (pageColors == "2") {//light
+    window.location.href = "../index.html?pageColors=" + pageColors;
   }
   else {//light por defecto
-    window.location.href = "../index.html?valor=" + valor;
+    window.location.href = "../index.html?pageColors=" + pageColors;
   }
 }
 function avanzar() {
   var titleValue = title.innerHTML;
-  var valor = getUrlParameter("valor");
+  var pageColors = getUrlParameter("pageColors");
   switch (titleValue) {
     case "Bot de discord":
-      window.location.href = "../project/casitaLatina.html?valor=" + valor;
+      window.location.href = "../project/casitaLatina.html?pageColors=" + pageColors;
       break;
     case "Casita Latina":
-      window.location.href = "../project/botDiscord.html?valor=" + valor;
+      window.location.href = "../project/botDiscord.html?pageColors=" + pageColors;
       break;
     default:
       // Ejecuta algún código en caso de que ninguno de los casos anteriores se cumpla
@@ -135,10 +137,10 @@ function avanzar() {
 }
 function retroceder() {
   var titleValue = title.innerHTML;
-  var valor = getUrlParameter("valor");
+  var pageColors = getUrlParameter("pageColors");
   switch (titleValue) {
     case "Bot de discord":
-      window.location.href = "../project/casitaLatina.html?valor=" + valor;
+      window.location.href = "../project/casitaLatina.html?pageColors=" + pageColors;
       break;
     default:
       // Ejecuta algún código en caso de que ninguno de los casos anteriores se cumpla

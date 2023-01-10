@@ -16,13 +16,13 @@ function getUrlVars() {
 function getUrlParameter(name) {
   return getUrlVars()[name];
 }
-var valor = getUrlParameter("valor");
-if (valor == "1") {//dark
+var pageColors = getUrlParameter("pageColors");
+if (pageColors == "1") {//dark
   document.body.classList.add("dark");
   toggleIcon.src = '../img/icons/sun.png'
   toggleText.textContent = 'Light Mode';
 }
-else if (valor == "2") {//dark
+else if (pageColors == "2") {//dark
   document.body.classList.remove("dark");
   toggleIcon.src = '../img/icons/moon.png'
   toggleText.textContent = 'Dark Mode';
@@ -38,10 +38,10 @@ toggleTheme.addEventListener("click", () => {
   if (toggleIcon.src.includes("moon.png")) {
     toggleIcon.src = '../img/icons/sun.png'
     toggleText.textContent = 'Light Mode';
-    window.history.replaceState({}, '', `?valor=1`);
+    window.history.replaceState({}, '', `?pageColors=1`);
   } else {
     toggleIcon.src = '../img/icons/moon.png'
     toggleText.textContent = 'Dark Mode';
-    window.history.replaceState({}, '', `?valor=2`);
+    window.history.replaceState({}, '', `?pageColors=2`);
   }
 })

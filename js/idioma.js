@@ -44,6 +44,15 @@ var footerLk = document.getElementById('footer-lk');
 var footerIg = document.getElementById('footer-ig');
 var copyright = document.getElementById('footer-copyright');
 
+window.onload = function() {
+  var idioma = localStorage.getItem("idioma");
+  if(idioma=="en"){
+    en();
+  }
+  else{
+    es();
+  }
+}
 function es() {
   //console.log("Spanish");
   fetch('json/infopag.json')
@@ -52,6 +61,8 @@ function es() {
       return res.json();
     })
     .then(function(json) {
+      //establecemos un local storage para mantener el estado español
+      localStorage.setItem("idioma", "es");
       // Establece el contenido del archivo JSON como el texto del párrafo
       titulo1.textContent = json.es.titles.t1;
       titulo2.textContent = json.es.titles.t2;
@@ -92,8 +103,7 @@ function es() {
       footerLk.textContent = json.es.footer.social.lk;
       footerIg.textContent = json.es.footer.social.ig;
       copyright.textContent = "Todos los derechos reservados.";
-
-
+      
     });
 }
 function en() {
@@ -104,6 +114,8 @@ function en() {
       return res.json();
     })
     .then(function(json) {
+      //establecemos un local storage para mantener el estado ingles
+      localStorage.setItem("idioma", "en");
       // Establece el contenido del archivo JSON como el texto del párrafo
       titulo1.textContent = json.en.titles.t1;
       titulo2.textContent = json.en.titles.t2;
