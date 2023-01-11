@@ -4,39 +4,44 @@ document.getElementById('volver').addEventListener('click', redirect);
 document.getElementById('next').addEventListener('click', avanzar);
 document.getElementById('prev').addEventListener('click', retroceder);
 
-// Variables HTML de 
-const titleDetail = document.getElementById('title-detail');
-const titleTec = document.getElementById('title-tec');
-const titleLink = document.getElementById('title-link');
-const title = document.getElementById('title');
+// Variables HTML
 const detail = document.getElementById('p-detail');
 const detail2 = document.getElementById('p-detail2');
 const detail3 = document.getElementById('p-detail3');
 const detail4 = document.getElementById('p-detail4');
 const detail5 = document.getElementById('p-detail5');
 const detail6 = document.getElementById('p-detail6');
-const detail7 = document.getElementById('p-detail7');
-const link = document.getElementById('link');
-const link2 = document.getElementById('link2');
-const img1 = document.getElementById('img1');
-const img2 = document.getElementById('img2');
-const img3 = document.getElementById('img3');
-const img4 = document.getElementById('img4');
+const tec1 = document.getElementById('tec-d1');
+const tec2 = document.getElementById('tec-d2');
+const tec3 = document.getElementById('tec-d3');
+const tec4 = document.getElementById('tec-d4');
+const tec5 = document.getElementById('tec-d5');
+const textLink = document.getElementById('text-link');
+const textLink2 = document.getElementById('text-link2');
+const textLink3 = document.getElementById('text-link3');
 
-// avanzar y volver en los proyectos.
+//generales
+const titleDetail = document.getElementById('title-detail');
+const titleTec = document.getElementById('title-tec');
+const titleLink = document.getElementById('title-link');
+const title = document.getElementById('title');
+const back = document.getElementById('volver');
+const languaje = document.getElementById('nav-tittle-idioma');
+const spanish = document.getElementById('spanEs');
+const english = document.getElementById('spanEn');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+const footerContactTitle = document.getElementById('titulo-contacto-footer');
+const footerFono = document.getElementById('footer-fono');
+const footerEmail = document.getElementById('footer-email');
+const footerSocialTitle = document.getElementById('id-social-title');
+const footerGit = document.getElementById('footer-git');
+const footerLk = document.getElementById('footer-lk');
+const footerIg = document.getElementById('footer-ig');
+const copyright = document.getElementById('footer-copyright');
+//
 const previusProject = document.getElementById('previus-project');
 const nextProject = document.getElementById('next-project');
-
-//footer para cambio de idioma
-var footerContactTitle = document.getElementById('titulo-contacto-footer');
-var footerFono = document.getElementById('footer-fono');
-var footerEmail = document.getElementById('footer-email');
-var footerSocialTitle = document.getElementById('id-social-title');
-var footerGit = document.getElementById('footer-git');
-var footerLk = document.getElementById('footer-lk');
-var footerIg = document.getElementById('footer-ig');
-var copyright = document.getElementById('footer-copyright');
-
 
 function getUrlVars() {
   var vars = {};
@@ -50,8 +55,14 @@ function getUrlParameter(name) {
 }
 window.onload = function() {
   var idioma = localStorage.getItem("idioma");
-  if(idioma=="en"){
+  if (idioma == "en") {
     idiomaEn();
+  }
+  else if (idioma == "es") {
+    idiomaEs();
+  }
+  else {
+    idiomaEs();
   }
   var pageColors = getUrlParameter("pageColors");
   const toggleIcon = document.getElementById("toggle-icon");
@@ -70,19 +81,54 @@ function idiomaEs() {
     .then(function(json) {
       //establecemos un local storage para mantener el estado español
       localStorage.setItem("idioma", "es");
-      //titulos generales
+      //Traducciones Generales
       titleDetail.textContent = json.es.general.titleDetail;
       titleTec.textContent = json.es.general.titleTec;
       titleLink.textContent = json.es.general.titleLink;
-      //footer
-      footerContactTitle.textContent = json.es.footer.contact.title;
-      footerFono.textContent = json.es.footer.contact.phone;
-      footerEmail.textContent = json.es.footer.contact.email;
-      footerSocialTitle.textContent = json.es.footer.social.title;
-      footerGit.textContent = json.es.footer.social.git;
-      footerLk.textContent = json.es.footer.social.lk;
-      footerIg.textContent = json.es.footer.social.ig;
+      back.textContent = json.es.general.back;
+      languaje.textContent = json.es.general.languaje;
+      spanish.textContent = json.es.general.spanish;
+      english.textContent = json.es.general.english;
+      footerContactTitle.textContent = json.es.general.footer.contact.title;
+      footerFono.textContent = json.es.general.footer.contact.phone;
+      footerEmail.textContent = json.es.general.footer.contact.email;
+      footerSocialTitle.textContent = json.es.general.footer.social.title;
+      footerGit.textContent = json.es.general.footer.social.git;
+      footerLk.textContent = json.es.general.footer.social.lk;
+      footerIg.textContent = json.es.general.footer.social.ig;
       copyright.textContent = "Todos los derechos reservados.";
+      switch (title.innerHTML) {
+        case "Casita Latina":
+          //title.textContent = json.es.project1.title;
+          detail.textContent = json.es.project1.detail;
+          detail2.textContent = json.es.project1.detail2;
+          detail3.textContent = json.es.project1.detail3;
+          detail4.textContent = json.es.project1.detail4;
+          tec1.textContent = json.es.project1.tec1;
+          tec2.textContent = json.es.project1.tec2;
+          tec3.textContent = json.es.project1.tec3;
+          textLink.textContent = json.es.project1.link;
+          next.textContent = json.es.general.next;
+          break;
+        case "Bot Discord":
+          detail.textContent = json.es.project2.detail;
+          detail2.textContent = json.es.project2.detail2;
+          detail3.textContent = json.es.project2.detail3;
+          detail4.textContent = json.es.project2.detail4;
+          detail5.textContent = json.es.project2.detail5;
+          detail6.textContent = json.es.project2.detail6;
+          tec1.textContent = json.es.project2.tec1;
+          tec2.textContent = json.es.project2.tec2;
+          tec3.textContent = json.es.project2.tec3;
+          tec4.textContent = json.es.project2.tec4;
+          tec5.textContent = json.es.project2.tec5;
+          textLink.textContent = json.es.project2.link;
+          textLink2.textContent = json.es.project2.link2;
+          textLink3.textContent = json.es.project2.link3;
+          next.textContent = json.es.general.next;
+          prev.textContent = json.es.general.prev;
+          break;
+      }
     });
 }
 function idiomaEn() {
@@ -97,15 +143,51 @@ function idiomaEn() {
       titleDetail.textContent = json.en.general.titleDetail;
       titleTec.textContent = json.en.general.titleTec;
       titleLink.textContent = json.en.general.titleLink;
-      //footer
-      footerContactTitle.textContent = json.en.footer.contact.title;
-      footerFono.textContent = json.en.footer.contact.phone;
-      footerEmail.textContent = json.en.footer.contact.email;
-      footerSocialTitle.textContent = json.en.footer.social.title;
-      footerGit.textContent = json.en.footer.social.git;
-      footerLk.textContent = json.en.footer.social.lk;
-      footerIg.textContent = json.en.footer.social.ig;
+      back.textContent = json.en.general.back;
+      languaje.textContent = json.en.general.languaje;
+      spanish.textContent = json.en.general.spanish;
+      english.textContent = json.en.general.english;
+      footerContactTitle.textContent = json.en.general.footer.contact.title;
+      footerFono.textContent = json.en.general.footer.contact.phone;
+      footerEmail.textContent = json.en.general.footer.contact.email;
+      footerSocialTitle.textContent = json.en.general.footer.social.title;
+      footerGit.textContent = json.en.general.footer.social.git;
+      footerLk.textContent = json.en.general.footer.social.lk;
+      footerIg.textContent = json.en.general.footer.social.ig;
       copyright.textContent = "All rights reserved.";
+
+      switch (title.innerHTML) {
+        case "Casita Latina":
+          //title.textContent = json.en.project1.title;
+          detail.textContent = json.en.project1.detail;
+          detail2.textContent = json.en.project1.detail2;
+          detail3.textContent = json.en.project1.detail3;
+          detail4.textContent = json.en.project1.detail4;
+          tec1.textContent = json.en.project1.tec1;
+          tec2.textContent = json.en.project1.tec2;
+          tec3.textContent = json.en.project1.tec3;
+          textLink.textContent = json.en.project1.link;
+          next.textContent = json.en.general.next;
+          break;
+        case "Bot Discord":
+          detail.textContent = json.en.project2.detail;
+          detail2.textContent = json.en.project2.detail2;
+          detail3.textContent = json.en.project2.detail3;
+          detail4.textContent = json.en.project2.detail4;
+          detail5.textContent = json.en.project2.detail5;
+          detail6.textContent = json.en.project2.detail6;
+          tec1.textContent = json.en.project2.tec1;
+          tec2.textContent = json.en.project2.tec2;
+          tec3.textContent = json.en.project2.tec3;
+          tec4.textContent = json.en.project2.tec4;
+          tec5.textContent = json.en.project2.tec5;
+          textLink.textContent = json.en.project2.link;
+          textLink2.textContent = json.en.project2.link2;
+          textLink3.textContent = json.en.project2.link3;
+          next.textContent = json.en.general.next;
+          prev.textContent = json.en.general.prev;
+          break;
+      }
     });
 }
 function redirect() {
@@ -124,7 +206,7 @@ function avanzar() {
   var titleValue = title.innerHTML;
   var pageColors = getUrlParameter("pageColors");
   switch (titleValue) {
-    case "Bot de discord":
+    case "Bot Discord":
       window.location.href = "../project/casitaLatina.html?pageColors=" + pageColors;
       break;
     case "Casita Latina":
@@ -139,7 +221,7 @@ function retroceder() {
   var titleValue = title.innerHTML;
   var pageColors = getUrlParameter("pageColors");
   switch (titleValue) {
-    case "Bot de discord":
+    case "Bot Discord":
       window.location.href = "../project/casitaLatina.html?pageColors=" + pageColors;
       break;
     default:
