@@ -19,7 +19,6 @@ const tec5 = document.getElementById('tec-d5');
 const textLink = document.getElementById('text-link');
 const textLink2 = document.getElementById('text-link2');
 const textLink3 = document.getElementById('text-link3');
-
 //generales
 const titleDetail = document.getElementById('title-detail');
 const titleTec = document.getElementById('title-tec');
@@ -43,16 +42,6 @@ const copyright = document.getElementById('footer-copyright');
 const previusProject = document.getElementById('previus-project');
 const nextProject = document.getElementById('next-project');
 
-function getUrlVars() {
-  var vars = {};
-  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
-    vars[key] = value;
-  });
-  return vars;
-}
-function getUrlParameter(name) {
-  return getUrlVars()[name];
-}
 window.onload = function() {
   var idioma = localStorage.getItem("idioma");
   if (idioma == "en") {
@@ -64,10 +53,8 @@ window.onload = function() {
   else {
     idiomaEs();
   }
-  var pageColors = getUrlParameter("pageColors");
-  const toggleIcon = document.getElementById("toggle-icon");
-  const toggleText = document.getElementById("texto-toggle");
-  if (pageColors == "1") {//dark
+  var toggle = localStorage.getItem("toggle")
+  if (toggle == "dark") {
     document.body.classList.add("dark");
     toggleIcon.src = '../img/icons/sun.png'
     toggleText.textContent = 'Light Mode';
@@ -191,26 +178,23 @@ function idiomaEn() {
     });
 }
 function redirect() {
-  var pageColors = getUrlParameter("pageColors");
-  if (pageColors == "1") {//dark
-    window.location.href = "../index.html?pageColors=" + pageColors;
+  var toggle = localStorage.getItem("toggle");
+  if (toggle == "dark") {
+    localStorage.setItem("toggle", "dark");
   }
-  else if (pageColors == "2") {//light
-    window.location.href = "../index.html?pageColors=" + pageColors;
+  else {
+    localStorage.setItem("toggle", "light");
   }
-  else {//light por defecto
-    window.location.href = "../index.html?pageColors=" + pageColors;
-  }
+  window.location.href = "../index.html";
 }
 function avanzar() {
   var titleValue = title.innerHTML;
-  var pageColors = getUrlParameter("pageColors");
   switch (titleValue) {
     case "Bot Discord":
-      window.location.href = "../project/casitaLatina.html?pageColors=" + pageColors;
+      window.location.href = "../project/casitaLatina.html";
       break;
     case "Casita Latina":
-      window.location.href = "../project/botDiscord.html?pageColors=" + pageColors;
+      window.location.href = "../project/botDiscord.html";
       break;
     default:
       // Ejecuta algún código en caso de que ninguno de los casos anteriores se cumpla
@@ -219,10 +203,9 @@ function avanzar() {
 }
 function retroceder() {
   var titleValue = title.innerHTML;
-  var pageColors = getUrlParameter("pageColors");
   switch (titleValue) {
     case "Bot Discord":
-      window.location.href = "../project/casitaLatina.html?pageColors=" + pageColors;
+      window.location.href = "../project/casitaLatina.html";
       break;
     default:
       // Ejecuta algún código en caso de que ninguno de los casos anteriores se cumpla

@@ -20,83 +20,83 @@
 </head>
 
 <body>
-  <header>
+  <header id="portada" style="background-image: url('img/2.png')">
     <div id="inicio">
       <p class="titulo-inicial"><span id="t1">Hola soy</span> <span id="name">Fabián López Magnan</span>
         <span id="t2">y soy desarrollador.</span>
       </p>
       <button id="btn-inicial" type="button" onclick="miTrabajo()" class="boton">Mi trabajo</button>
     </div><!-- Inicio -->
-    <nav id="navegador" class="navegador navbar navbar-expand-sm navbar-oscuro bg-oscuro">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a id="nav-tittle-inicio" class="nav-link active" onclick="inicio()" aria-current="page">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a id="nav-tittle-perfil" class="nav-link" aria-current="page" onclick="miTrabajo()">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a id="nav-tittle-portafolio" class="nav-link" onclick="portafolio()">Proyectos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span id="nav-tittle-contacto">Contacto</span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" target="_blank" href="https://github.com/FabianLopezMagnan"><img
-                      class="social-icon" src="img/icons/4x3/github.png" alt="Github">Github</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/efelante_volador/"><img
-                      class="social-icon" src="img/icons/4x3/ig.png" alt="Instagram">Instagram</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" target="_blank"
-                    href="https://www.linkedin.com/in/fabi%C3%A1n-andr%C3%A9s-l%C3%B3pez-magnan-a1358b177/"><img
-                      class="social-icon" src="img/icons/4x3/lk.png" alt="Linkedin">Linkedin</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" target="_blank"
-                    href="mailto:fabianlopezmagnan@gmail.com?body=He leido tu Portafolio, me parecio interesante y he decidido escribirte un correo""><img
+  </header>
+  <nav id="navegador" class="navegador navbar navbar-expand-sm navbar-oscuro bg-oscuro">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="nav-tittle-inicio" class="nav-link active" onclick="inicio()" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-tittle-perfil" class="nav-link" aria-current="page" onclick="miTrabajo()">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-tittle-portafolio" class="nav-link" onclick="portafolio()">Proyectos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span id="nav-tittle-contacto">Contacto</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" target="_blank" href="https://github.com/FabianLopezMagnan"><img
+                    class="social-icon" src="img/icons/4x3/github.png" alt="Github">Github</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/efelante_volador/"><img
+                    class="social-icon" src="img/icons/4x3/ig.png" alt="Instagram">Instagram</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" target="_blank"
+                  href="https://www.linkedin.com/in/fabi%C3%A1n-andr%C3%A9s-l%C3%B3pez-magnan-a1358b177/"><img
+                    class="social-icon" src="img/icons/4x3/lk.png" alt="Linkedin">Linkedin</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" target="_blank"
+                  href="mailto:fabianlopezmagnan@gmail.com?body=He leido tu Portafolio, me parecio interesante y he decidido escribirte un correo""><img
                       class=" social-icon" src="img/icons/4x3/mail.png" alt="Email">Correo</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span id="nav-tittle-idioma">Idioma</span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" data-value="es" id="jsonBtnEs"> <img class="bandera"
-                      src="img/icons/4x3/es.svg" alt="Bandera español"><span id="spanEs">Español</span></a></li>
-                <li>
-                  <hr class="dropdown-divider ">
-                </li>
-                <li><a class="dropdown-item" data-value="es" id="jsonBtnEn"> <img class="bandera"
-                      src="img/icons/4x3/gb.svg" alt="Bandera español"><span id="spanEn">Ingles</span></a></li>
-              </ul>
-            </li>
-          </ul>
-          <div id="toggle-theme" class="toggle-theme">
-            <p id="toggle-text" class="toggle-theme__text">
-              <img id="toggle-icon" src="img/icons/moon.png" alt="Icon theme" class="toggle-theme__ic"><span
-                id="texto-toggle">Dark Mode</span>
-            </p>
-          </div>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span id="nav-tittle-idioma">Idioma</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-value="es" id="jsonBtnEs"> <img class="bandera"
+                    src="img/icons/4x3/es.svg" alt="Bandera español"><span id="spanEs">Español</span></a></li>
+              <li>
+                <hr class="dropdown-divider ">
+              </li>
+              <li><a class="dropdown-item" data-value="es" id="jsonBtnEn"> <img class="bandera"
+                    src="img/icons/4x3/gb.svg" alt="Bandera español"><span id="spanEn">Ingles</span></a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="toggle-theme" class="toggle-theme">
+          <p id="toggle-text" class="toggle-theme__text">
+            <img id="toggle-icon" src="img/icons/moon.png" alt="Icon theme" class="toggle-theme__ic"><span
+              id="texto-toggle">Dark Mode</span>
+          </p>
         </div>
       </div>
-    </nav><!-- Navegador -->
-  </header>
+    </div>
+  </nav><!-- Navegador -->
   <main class="container" id="Perfil-Proyectos-Certificados">
     <section id="section-perfil">
       <article id="articulo-perfil-datos" class="container-fluid">
@@ -274,7 +274,7 @@
   <script src="./js/navScroll.js"></script>
   <script src="./js/idioma.js"></script>
   <script src="./js/darkmode.js"></script>
-  <script src="./js/redirect.js"></script>
+  <script src="./js/redirectProjects.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 

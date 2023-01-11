@@ -389,3 +389,9 @@ background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
   color: inherit;
   text-decoration: none;
 }
+
+#portada{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
