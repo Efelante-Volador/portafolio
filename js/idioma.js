@@ -46,10 +46,10 @@ var copyright = document.getElementById('footer-copyright');
 
 window.onload = function() {
   var idioma = localStorage.getItem("idioma");
-  if(idioma=="en"){
+  if (idioma == "en") {
     en();
   }
-  else{
+  else {
     es();
   }
 }
@@ -84,7 +84,7 @@ function es() {
       text.textContent = json.es.profile.who.text;
       descargarCV.textContent = json.es.profile.who.dowload;
       skills.textContent = json.es.profile.skills;
-      botonInicial.textContent = "Mi Trabajo";
+      botonInicial.textContent = "Mi trabajo";
       toggleEn.textContent = json.es.navbar.language.en;
       toggleEs.textContent = json.es.navbar.language.es;
       sectionProyecto.textContent = "Proyectos"
@@ -103,7 +103,7 @@ function es() {
       footerLk.textContent = json.es.footer.social.lk;
       footerIg.textContent = json.es.footer.social.ig;
       copyright.textContent = "Todos los derechos reservados.";
-      
+
     });
 }
 function en() {
@@ -137,7 +137,7 @@ function en() {
       text.textContent = json.en.profile.who.text;
       descargarCV.textContent = json.en.profile.who.dowload;
       skills.textContent = json.en.profile.skills;
-      botonInicial.textContent = "My Work";
+      botonInicial.textContent = "My work";
       toggleEn.textContent = json.en.navbar.language.en;
       toggleEs.textContent = json.en.navbar.language.es;
       sectionProyecto.textContent = "Projects"
@@ -159,5 +159,3 @@ function en() {
 
     });
 }
-
-
