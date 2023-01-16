@@ -1,6 +1,6 @@
 document.getElementById('jsonBtnEs').addEventListener('click', idiomaEs);
 document.getElementById('jsonBtnEn').addEventListener('click', idiomaEn);
-document.getElementById('volver').addEventListener('click', redirect);
+document.getElementById('volver').addEventListener('click', back);
 document.getElementById('next').addEventListener('click', avanzar);
 document.getElementById('prev').addEventListener('click', retroceder);
 
@@ -52,12 +52,6 @@ window.onload = function() {
   }
   else {
     idiomaEs();
-  }
-  var toggle = localStorage.getItem("toggle")
-  if (toggle == "dark") {
-    document.body.classList.add("dark");
-    toggleIcon.src = '../img/icons/sun.png'
-    toggleText.textContent = 'Light Mode';
   }
 }
 function idiomaEs() {
@@ -177,7 +171,7 @@ function idiomaEn() {
       }
     });
 }
-function redirect() {
+function back() {
   var toggle = localStorage.getItem("toggle");
   if (toggle == "dark") {
     localStorage.setItem("toggle", "dark");
