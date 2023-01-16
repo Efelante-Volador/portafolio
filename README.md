@@ -1,3 +1,3 @@
-Task
--revisar ortografia y redacción.
--agregar mas proyectos.
+# Tareas Pendientes
+- revisar correcta traducción y redacción.
+- agregar mas proyectos.
