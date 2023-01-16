@@ -1,3 +1,7 @@
+const toggleTheme = document.getElementById("toggle-theme");
+const toggleIcon = document.getElementById("toggle-icon");
+const toggleText = document.getElementById("texto-toggle");
+
 window.onload = function() {
   var toggle = localStorage.getItem("toggle");
   if (toggle == "dark") {
