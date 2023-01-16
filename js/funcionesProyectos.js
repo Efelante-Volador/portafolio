@@ -1,6 +1,6 @@
 document.getElementById('jsonBtnEs').addEventListener('click', idiomaEs);
 document.getElementById('jsonBtnEn').addEventListener('click', idiomaEn);
-document.getElementById('volver').addEventListener('click', back);
+document.getElementById('volver').addEventListener('click', redirect);
 document.getElementById('next').addEventListener('click', avanzar);
 document.getElementById('prev').addEventListener('click', retroceder);
 
@@ -57,13 +57,13 @@ window.onload = function() {
   const toggleText = document.getElementById("texto-toggle");
   var toggle = localStorage.getItem("toggle");
   if (toggle == "dark") {
-    toggleIcon.src = './img/icons/sun.png'
+    toggleIcon.src = '../img/icons/sun.png'
     toggleText.textContent = 'Light Mode';
     localStorage.setItem("toggle", "dark");
     document.body.classList.add("dark");
   }
   else {
-    toggleIcon.src = './img/icons/moon.png'
+    toggleIcon.src = '../img/icons/moon.png'
     toggleText.textContent = 'Dark Mode';
     localStorage.setItem("toggle", "light");
     document.body.classList.remove("dark");
@@ -186,7 +186,7 @@ function idiomaEn() {
       }
     });
 }
-function back() {
+function redirect() {
   var toggle = localStorage.getItem("toggle");
   if (toggle == "dark") {
     localStorage.setItem("toggle", "dark");
