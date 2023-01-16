@@ -16,6 +16,11 @@ window.onload = function() {
     localStorage.setItem("toggle", "light");
     document.body.classList.remove("dark");
   }
+  const Client = require("@replit/database");
+  const client = new Client();
+  await client.set("key", "value");
+  let key = await client.get("key");
+  console.log("------------------"+key);
 }
 
 toggleTheme.addEventListener("click", () => {
