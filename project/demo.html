@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta chatset="UTF-8" />
+  <meta name="description"
+    content="Esta pagina te mostrara el Portafolio de Fabian Lopez Magnan, sus trabajos y proyectos" />
+  <meta name="robots" content="index,follow" />
+  <title>CasitaLatina</title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="../css/css.css">
+</head>
+
+<body>
+  <nav id="navegador2" class="navegador navbar navbar-expand-sm navbar-oscuro bg-oscuro">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="volver" class="nav-link active" aria-current="page">Volver</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span id="nav-tittle-idioma">Idioma</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-value="es" id="jsonBtnEs"> <img class="bandera"
+                    src="../img/icons/4x3/es.svg" alt="Bandera español"><span id="spanEs">Español</span></a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" data-value="es" id="jsonBtnEn"> <img class="bandera"
+                    src="../img/icons/4x3/gb.svg" alt="Bandera español"><span id="spanEn">Ingles</span></a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="toggle-theme" class="toggle-theme">
+          <p id="toggle-text" class="toggle-theme__text">
+            <img id="toggle-icon" src="../img/icons/moon.png" alt="Icon theme" class="toggle-theme__ic"><span
+              id="texto-toggle">Dark Mode</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav><!-- Navegador -->
+  <main>
+    <section>
+      <h1 style="margin-top:120px;margin-bottom:70px;" id="title"></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 id="previus-project" class="left"> <a id="prev" style="cursor: pointer;">
+                <-- Proyecto Anterior </a>
+            </h4>
+          </div>
+          <div class="col-md-6">
+            <h4 id="next-project" class="right"> <a id="next" style="cursor: pointer;">Siguiente Proyecto --></a> </h4>
+          </div>
+        </div>
+      </div>
+      <article id="imagenes-proyecto">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" style="text-align:center;">
+              <h4 id="title-detail">Descripción de Proyecto.</h4>
+            </div>
+            <div id="img1" class="col-md-6" style="padding:20px;margin-top:20px;">
+              <img src='../img/casitaLatina/img1.PNG' alt='Imagen1' style='width:100%;max-height:300px;'>
+            </div>
+            <div class="col-md-6" style="padding:20px;">
+              <p id="p-detail"></p>
+              <p id="p-detail2"></p>
+            </div>
+            <div class="col-md-6" style="padding:20px;">
+              <p id="p-detail3"></p>
+              <p id="p-detail4"></p>
+            </div>
+            <div id="img2" class="col-md-6" style="padding:20px;">
+              <img src='../img/casitaLatina/img2.PNG' alt='Imagen2' style='width:100%;max-height:250px;'>
+            </div>
+            <div id="img3" class="col-md-6" style="padding:20px;">
+              <img src='../img/casitaLatina/img3.PNG' alt='Imagen1' style='width:100%;max-height:250px;'>
+            </div>
+            <div class="col-md-6 center" style="margin-top:20px;">
+              <h4 id="title-tec">Tecnologias usadas</h4>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="linkDemo-proyecto" class="center">
+        <div class="container">
+          <div class="row">
+            <h4 id="title-link">Link de Demostracion o funcionamiento actual.</h4>
+            <p id="link"></p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="center">
+        <h4 id="titulo-contacto-footer">Contacto</h4>
+        <p><span id="footer-fono">Teléfono:</span> +569 300 900 86
+          <br><span id="footer-email">Correo electrónico:</span> fabianlopezmagnan@gmail.com
+        </p>
+      </div>
+      <div class="row center" style="padding:20px;">
+        <h4 id="id-social-title">Redes sociales</h4>
+        <div class="col-sm-4 left" id="github-footer">
+          <p>
+            <a class="dropdown-item" target="_blank" href="https://github.com/FabianLopezMagnan">
+              <img class="social-icon" src="../img/icons/4x3/github.png" alt="Instagram">Github/ FabianLopezMagnan
+            </a>
+            <span id="footer-git">Sigue mis proyectos en Github.</span>
+          </p>
+        </div><!-- Github -->
+        <div class="col-sm-4 left" id="linkedin-footer">
+          <p>
+            <a class="dropdown-item" target="_blank"
+              href="https://www.linkedin.com/in/fabi%C3%A1n-andr%C3%A9s-l%C3%B3pez-magnan-a1358b177/">
+              <img class="social-icon" src="../img/icons/4x3/lk.png" alt="Instagram">Linkedin
+            </a>
+            <span id="footer-lk">Puedes conectar conmigo por Linkedin.</span>
+          </p>
+        </div><!-- Linkedin -->
+        <div class="col-sm-4 left" id="instagram-footer">
+          <p>
+            <a class="dropdown-item" target="_blank" href="https://www.instagram.com/efelante_volador/">
+              <img class="social-icon" src="../img/icons/4x3/ig.png" alt="Instagram">Instagram/ @efelante_volador
+            </a>
+            <span id="footer-ig">Conoce más de mi vida y hobbies.</span>
+          </p>
+        </div><!-- Instagram -->
+      </div>
+    </div>
+    <div class="center">
+      <p class="text-center copyright">
+        Copyright &copy; 2022 Fabián López Magnan - <span id="footer-copyright">Todos los derechos reservados.</span>
+      </p>
+    </div>
+  </footer>
+  <script src="../js/darkmode.js"></script>
+  <script src="../js/funcionesProyectos.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
